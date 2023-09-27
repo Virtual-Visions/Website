@@ -1,0 +1,68 @@
+.term-container {
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr ;
+  grid-gap: 5px;
+  margin-top: -625px;
+  margin-left: 500px;
+  margin-right: 300px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.term {
+  font-size: 60px;
+  transition: 0.5s;
+  padding: 30px;
+  padding-bottom: 100px;
+  opacity: 50%;
+}
+
+ .term:hover {
+  transform: translateX(40px) scale(2); /* Verschiebt und vergrößert den Begriff beim Hover */
+  opacity: 100%;
+  
+} 
+
+.vertical {
+  transform: rotate(0);
+}
+.horizontal {
+  
+  transform: rotate(90deg);
+  margin-bottom: 50px;
+}
+
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Make the container full height of the viewport */
+}
+
+.headline {
+  color: #d5d5d5;
+  font-size: 3rem; /* Adjust the font size as needed */
+  text-align: center; /* Center text horizontally */
+  padding: 1rem; /* Adjust padding as needed */
+}
+
+.imageStyle {
+  background-image: url('/public/MainImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 25%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .imageStyle {
+    background-image: url('/public/MainImage_Small.jpg'); /* Replace with the path to your small screen image */
+  }
+}

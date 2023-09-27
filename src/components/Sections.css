@@ -1,0 +1,53 @@
+.section {
+  height: 100vh; /* Jeder Abschnitt nimmt die volle Bildschirmhöhe ein */
+  width: 100%; /* Die volle Bildschirmbreite */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black; /* Hintergrundfarbe anpassen */
+  color: white;
+}
+
+/* Stil für den Inhalt in den Abschnitten (optional) */
+.section h2 {
+  font-size: 2rem;
+}
+
+.section p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.section1 {
+  margin-top: 20px;
+  justify-content: center;
+  padding: 0;
+}
+.section2{
+  width: 100%; /* Die volle Bildschirmbreite */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black; /* Hintergrundfarbe anpassen */
+  color: white;
+  height: auto; /* Remove fixed height for responsiveness */
+  min-height: 100vh; /* Ensure it takes the full viewport height when content is small */
+  padding-bottom: 3rem;
+}
+
+.section3{
+  width: 100%; /* Die volle Bildschirmbreite */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 100vh;
+
+}
+
+.section p {
+font-size: 1.2rem;
+margin-top: 20px;
+}

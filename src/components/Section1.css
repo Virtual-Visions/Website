@@ -1,0 +1,71 @@
+/* Allgemeine Stile für die Textpassagen */
+.text-passage {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text */
+  /* Andere Stile hier einfügen */
+}
+
+/* Stile für den Titel */
+h3 {
+  padding: 1rem 1.5rem;
+  /* Andere Stile hier einfügen */
+}
+
+/* Stile für das Symbol */
+.icon {
+  height: 5rem;
+  display: flex;
+  justify-content: center; /* Horizontal zentrieren */
+  align-items: center; /* Vertikal zentrieren */
+  margin-bottom: 1.5rem;
+}
+
+.icon img {
+  width: 20%;
+  height: auto;
+  /* Andere Stile hier einfügen */
+}
+
+/* Container für Textpassagen */
+.text-passage-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  margin-left: 10%; /* Adjust margin for smaller screens */
+  margin-right: 10%; /* Adjust margin for smaller screens */
+  padding-bottom: 5rem; /* Reduce padding for smaller screens */
+  /* Andere Stile hier einfügen */
+}
+
+/* Stile für den Abschnittstitel */
+.section-title {
+  padding: 5rem 30%; /* Adjust padding for smaller screens */
+  font-size: 20px;
+  /* Andere Stile hier einfügen */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .text-passage {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .icon {
+    height: 3rem; /* Reduce icon size for smaller screens */
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust grid layout for smaller screens */
+  .text-passage-container {
+    grid-template-columns: 1fr; /* Display one column on smaller screens */
+    margin-left: 5%; /* Adjust margin for smaller screens */
+    margin-right: 5%; /* Adjust margin for smaller screens */
+  }
+
+  .section-title {
+    padding: 2rem 5%; /* Adjust padding for smaller screens */
+  }
+}
