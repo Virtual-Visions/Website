@@ -24,7 +24,7 @@
   text-align: center;
   padding: 2rem;
   
-  max-width: 450px; /* Set a maximum width for each image card */
+  max-width: 350px; /* Set a maximum width for each image card */
   margin: 0 5%; /* Adjust the margin to control the spacing between cards */
 }
 
