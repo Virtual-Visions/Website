@@ -48,7 +48,7 @@
 }
 
 .imageStyle {
-  background-image: url('/public/Bjarne_Bild.jpg');
+  background-image: url('/public/MainImage.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
