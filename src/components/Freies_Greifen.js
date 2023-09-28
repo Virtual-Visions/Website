@@ -28,7 +28,7 @@ const headerImageStyle = {
 };
 
 const headerTextStyles = {
-    
+
     margin: '10px',
     fontSize: '40px',
     paddingLeft: '10.5%',
@@ -112,9 +112,18 @@ function App() {
                         {language === 'de' ? 'Screenshots' : 'Screenshots'}
                     </h2>
                     <div style={imageContainerStyle}>
-                        <img src="Grabbing01.png" alt={language === 'de' ? 'Bild 1' : 'Image 1'} style={imageStyle} />
-                        <img src="Grabbing02.png" alt={language === 'de' ? 'Bild 2' : 'Image 2'} style={imageStyle} />
-                        <img src="Grabbing03.png" alt={language === 'de' ? 'Bild 3' : 'Image 3'} style={imageStyle} />
+                        <img src="Grabbing01.png" alt={language === 'de' ? 'Bild 1' : 'Image 1'} style={{
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
+                        <img src="Grabbing02.png" alt={language === 'de' ? 'Bild 2' : 'Image 2'} style={{
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
+                        <img src="Grabbing03.png" alt={language === 'de' ? 'Bild 3' : 'Image 3'} style={{
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
 
                         {/* Füge weitere Bilder hinzu */}
                     </div>
