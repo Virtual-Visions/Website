@@ -49,11 +49,13 @@ const imageContainerStyle = {
 };
 
 const imageStyle = {
-    width: '30%', // Jedes Bild nimmt 30% der Breite ein, um drei Bilder pro Zeile zu ermöglichen
-    maxWidth: '100%',
+    width: '30%', // Auf kleineren Bildschirmen die volle Breite verwenden
+    maxWidth: '100%', // Maximale Breite auf 100% setzen
     height: 'auto',
     marginBottom: '20px', // Abstand zwischen den Bildern
 };
+
+
 
 const linkStyle = {
     color: 'white', // Ändere die Linkfarbe nach Bedarf
@@ -102,16 +104,44 @@ function App() {
                         {language === 'de' ? 'Screenshots' : 'Screenshots'}
                     </h2>
                     <div style={imageContainerStyle}>
-                        <img src="Memoria02.png" alt={language === 'de' ? 'Bild 1' : 'Image 1'} style={imageStyle} />
-                        <img src="Memoria03.png" alt={language === 'de' ? 'Bild 2' : 'Image 2'} style={imageStyle} />
-                        <img src="Memoria01.png" alt={language === 'de' ? 'Bild 3' : 'Image 3'} style={imageStyle} />
-                        <img src="Memoria07.png" alt={language === 'de' ? 'Bild 4' : 'Image 4'} style={imageStyle} />
-                        <img src="Memoria08.png" alt={language === 'de' ? 'Bild 5' : 'Image 5'} style={imageStyle} />
-                        <img src="Memoria09.png" alt={language === 'de' ? 'Bild 6' : 'Image 6'} style={imageStyle} />
-                        <img src="Memoria04.png" alt={language === 'de' ? 'Bild 7' : 'Image 7'} style={imageStyle} />
-                        <img src="Memoria05.png" alt={language === 'de' ? 'Bild 8' : 'Image 8'} style={imageStyle} />
-                        <img src="Memoria06.png" alt={language === 'de' ? 'Bild 9' : 'Image 9'} style={imageStyle} />
-                        {/* Füge weitere Bilder hinzu */}
+                        <img src="Memoria02.png" alt={language === 'de' ? 'Bild 1' : 'Image 1'} style={{
+        ...imageStyle,
+        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+    }} />
+                        <img src="Memoria03.png" alt={language === 'de' ? 'Bild 2' : 'Image 2'} style={{
+        ...imageStyle,
+        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+    }} />
+                        <img src="Memoria01.png" alt={language === 'de' ? 'Bild 3' : 'Image 3'} style={{
+        ...imageStyle,
+        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+    }} />
+                        <img src="Memoria07.png" alt={language === 'de' ? 'Bild 4' : 'Image 4'} style={{
+        ...imageStyle,
+        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+    }} />
+                        <img src="Memoria08.png" alt={language === 'de' ? 'Bild 5' : 'Image 5'} style={{
+        ...imageStyle,
+        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+    }} />
+                        <img src="Memoria09.png" alt={language === 'de' ? 'Bild 6' : 'Image 6'} style={{
+        ...imageStyle,
+        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+    }} />
+                        <img src="Memoria04.png" alt={language === 'de' ? 'Bild 7' : 'Image 7'} style={{
+        ...imageStyle,
+        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+    }} />
+                        <img src="Memoria05.png" alt={language === 'de' ? 'Bild 8' : 'Image 8'} style={{
+        ...imageStyle,
+        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+    }} />
+                        <img src="Memoria06.png" alt={language === 'de' ? 'Bild 9' : 'Image 9'} style={{
+        ...imageStyle,
+        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+    }} />
+
+
                     </div>
                 </section>
                 <section style={sectionStyle}>
