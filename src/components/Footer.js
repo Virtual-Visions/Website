@@ -49,30 +49,23 @@ const Footer = () => {
               {language === "de" ? "Soziale Medien" : "Social Media"}
             </Heading>
             <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-
-                  {language === "de" ? "Facebook(In Arbeit)" : "Facebook(WIP)"}
-
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
               <i className="fab fa-instagram">
 
-                  {language === "de" ? "Instagram(In Arbeit)" : "Instagram(WIP"}
+                  {language === "de" ? "Instagram(In Arbeit)" : "Instagram(WIP)"}
 
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            <FooterLink href="https://twitter.com/VirtualVisionV">
               <i className="fab fa-twitter">
 
-                  {language === "de" ? "Twitter(In Arbeit)" : "Twitter(WIP)"}
+                  {language === "de" ? "Twitter" : "Twitter"}
 
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            <FooterLink href="https://www.youtube.com/channel/UC-_iOjk6FTrQt0w5hVPYFMA">
               <i className="fab fa-youtube">
 
-                  {language === "de" ? "Youtube(In Arbeit)" : "Youtube(WIP)"}
+                  {language === "de" ? "Youtube" : "Youtube"}
 
               </i>
             </FooterLink>
