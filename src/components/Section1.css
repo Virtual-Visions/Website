@@ -41,9 +41,11 @@ h3 {
 }
 
 /* Stile für den Abschnittstitel */
-.section-title {
+.section1-title {
   padding: 5rem 30%; /* Adjust padding for smaller screens */
   font-size: 20px;
+  background-color: 'white';
+  border-radius: 8px;
   /* Andere Stile hier einfügen */
 }
 
@@ -65,7 +67,10 @@ h3 {
     margin-right: 5%; /* Adjust margin for smaller screens */
   }
 
-  .section-title {
+  .section1-title {
     padding: 2rem 5%; /* Adjust padding for smaller screens */
+    background-color: 'white';
+
+    border-radius: 8px;
   }
 }

@@ -24,8 +24,8 @@ function Section1() {
   const { language } = useContext(LanguageContext); // Verwenden Sie den LanguageContext
 
   return (
-    <div className="container mt-4">
-      <div className="section-title">
+    <div className="container">
+      <div className="section1-title">
         <h2>{language === 'de' ? 'Die Mission von Virtual Visions' : 'The Mission of Virtual Visions'}</h2>
         <div>
           {language === 'de'

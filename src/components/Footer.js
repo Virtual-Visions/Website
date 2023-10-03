@@ -26,8 +26,11 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>
-              {language === "de" ? "Über uns" : "About Us"}
+              {language === "de" ? "Abschnitte" : "Sections"}
             </Heading>
+            <FooterLink onClick={() => scrollToSection("section4")}>
+              {language === "de" ? "Über uns" : "About us"}
+            </FooterLink>
             <FooterLink onClick={() => scrollToSection("section1")}>
               {language === "de" ? "Vision" : "Vision"}
             </FooterLink>
@@ -40,7 +43,6 @@ const Footer = () => {
             <FooterLink href="/Imprint">
               {language === "de" ? "Impressum" : "Imprint"}
             </FooterLink>
-            <FooterLink href="/">{language === "de" ? "Startseite" : "Home"}</FooterLink>
           </Column>
           <Column>
             <Heading>
@@ -49,28 +51,35 @@ const Footer = () => {
             <FooterLink href="#">
               <i className="fab fa-facebook-f">
 
-                  {language === "de" ? "Facebook" : "Facebook"}
+                  {language === "de" ? "Facebook(In Arbeit)" : "Facebook(WIP)"}
 
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-instagram">
 
-                  {language === "de" ? "Instagram" : "Instagram"}
+                  {language === "de" ? "Instagram(In Arbeit)" : "Instagram(WIP"}
 
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-twitter">
 
-                  {language === "de" ? "Twitter" : "Twitter"}
+                  {language === "de" ? "Twitter(In Arbeit)" : "Twitter(WIP)"}
 
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-youtube">
 
-                  {language === "de" ? "Youtube" : "Youtube"}
+                  {language === "de" ? "Youtube(In Arbeit)" : "Youtube(WIP)"}
+
+              </i>
+            </FooterLink>
+            <FooterLink href="#">
+              <i className="fab linked-in">
+
+                  {language === "de" ? "Linked In(In Arbeit)" : "Linked In(WIP)"}
 
               </i>
             </FooterLink>

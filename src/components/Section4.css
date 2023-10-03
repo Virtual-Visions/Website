@@ -12,7 +12,9 @@
 .imgtext {
   width: 80%;
 }
-
+.phrase {
+  text-align: justify;
+}
 .icon img {
   width: 20%;
   height: auto;
@@ -23,6 +25,7 @@
 .section-title {
   padding: 2rem 30%; /* Adjust padding for smaller screens */
   font-size: 20px;
+
   /* Andere Stile hier einfügen */
 }
 
@@ -47,4 +50,6 @@
   .section-title {
     padding: 2rem 5%; /* Adjust padding for smaller screens */
   }
+
+  
 }
