@@ -48,7 +48,8 @@ const sectionStyle = {
 };
 
 const sectionTextStyle = {
-
+    
+    fontSize: '18px',
     lineHeight: '1.5', // Erhöht den Zeilenabstand für eine bessere Lesbarkeit
 };
 

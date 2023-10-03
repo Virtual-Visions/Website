@@ -47,6 +47,7 @@ const sectionStyle = {
 
 const sectionTextStyle = {
     lineHeight: '1.5', // Erhöht den Zeilenabstand für eine bessere Lesbarkeit
+    fontSize: '18px',
 };
 
 const imageContainerStyle = {

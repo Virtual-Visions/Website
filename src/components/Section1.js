@@ -5,6 +5,9 @@ import { LanguageContext } from './LanguageProvider'; // Importieren Sie den Lan
 const TextPassage = ({ title, content, alignRight, icon }) => {
   const columnClass = alignRight ? 'align-right' : '';
 
+  const paragraphStyle = {
+    textAlign: 'justify',
+  };
 
   return (
     <div className={`text-passage ${columnClass}`}>
@@ -12,7 +15,7 @@ const TextPassage = ({ title, content, alignRight, icon }) => {
         <img src={icon} alt="Icon" />
       </div>
       <h3>{title }</h3>
-      <p>{ content }</p>
+      <p style={paragraphStyle}>{content}</p>
     </div>
   );
 };

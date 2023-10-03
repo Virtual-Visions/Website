@@ -22,6 +22,7 @@
   margin-top: 20px;
   justify-content: center;
   padding: 0;
+  background-color: rgb(235, 235, 235); 
 }
 .section2{
   width: 100%; /* Die volle Bildschirmbreite */
@@ -29,8 +30,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black; /* Hintergrundfarbe anpassen */
-  color: white;
+  background-color: white; /* Hintergrundfarbe anpassen */
+  color: black;
+  height: auto; /* Remove fixed height for responsiveness */
+  min-height: 100vh; /* Ensure it takes the full viewport height when content is small */
+  padding-bottom: 3rem;
+}
+
+.section4{
+  width: 100%; /* Die volle Bildschirmbreite */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(235, 235, 235); /* Hintergrundfarbe anpassen */
+  color: black;
   height: auto; /* Remove fixed height for responsiveness */
   min-height: 100vh; /* Ensure it takes the full viewport height when content is small */
   padding-bottom: 3rem;

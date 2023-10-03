@@ -7,14 +7,16 @@ const textContent = {
   de: {
     main: 'Main',
     vision: 'Vision',
-    aboutUs: 'Über Uns',
+    company: "Über Uns",
+    aboutUs: 'Team',
     projects: 'Projekte',
     language: 'EN',
   },
   en: {
     main: 'Main',
     vision: 'Vision',
-    aboutUs: 'About Us',
+    company: "About Us",
+    aboutUs: 'Team',
     projects: 'Projects',
     language: 'DE',
   },
@@ -165,6 +167,22 @@ function AnimatedHeadline() {
               {textContent[language].main}
             </button>
             <button
+              style={menuSmallItemStyle}
+              onMouseEnter={handleButtonHover}
+              onMouseLeave={handleButtonLeave}
+              onClick={() => scrollToSection('section4')}
+            >
+              {textContent[language].company}
+            </button>
+            <button
+              style={menuItemStyle}
+              onMouseEnter={handleButtonHover}
+              onMouseLeave={handleButtonLeave}
+              onClick={() => scrollToSection('section3')}
+            >
+              {textContent[language].projects}
+            </button>
+            <button
               style={menuItemStyle}
               onMouseEnter={handleButtonHover}
               onMouseLeave={handleButtonLeave}
@@ -179,14 +197,6 @@ function AnimatedHeadline() {
               onClick={() => scrollToSection('section2')}
             >
               {textContent[language].aboutUs}
-            </button>
-            <button
-              style={menuItemStyle}
-              onMouseEnter={handleButtonHover}
-              onMouseLeave={handleButtonLeave}
-              onClick={() => scrollToSection('section3')}
-            >
-              {textContent[language].projects}
             </button>
             |
             <button
@@ -215,6 +225,22 @@ function AnimatedHeadline() {
               style={menuSmallItemStyle}
               onMouseEnter={handleButtonHover}
               onMouseLeave={handleButtonLeave}
+              onClick={() => scrollToSection('section4')}
+            >
+              {textContent[language].company}
+            </button>
+            <button
+              style={menuSmallItemStyle}
+              onMouseEnter={handleButtonHover}
+              onMouseLeave={handleButtonLeave}
+              onClick={() => scrollToSection('section3')}
+            >
+              {textContent[language].projects}
+            </button>
+            <button
+              style={menuSmallItemStyle}
+              onMouseEnter={handleButtonHover}
+              onMouseLeave={handleButtonLeave}
               onClick={() => scrollToSection('section1')}
             >
               {textContent[language].vision}
@@ -227,14 +253,8 @@ function AnimatedHeadline() {
             >
               {textContent[language].aboutUs}
             </button>
-            <button
-              style={menuSmallItemStyle}
-              onMouseEnter={handleButtonHover}
-              onMouseLeave={handleButtonLeave}
-              onClick={() => scrollToSection('section3')}
-            >
-              {textContent[language].projects}
-            </button>
+            
+            
             <button
               style={languageButtonStyle}
               onMouseEnter={handleButtonHover}

@@ -38,7 +38,7 @@ const sectionStyle = {
 };
 
 const sectionTextStyle = {
-
+    fontSize: '18px',
     lineHeight: '1.5', // Erhöht den Zeilenabstand für eine bessere Lesbarkeit
 };
 
@@ -54,8 +54,6 @@ const imageStyle = {
     height: 'auto',
     marginBottom: '20px', // Abstand zwischen den Bildern
 };
-
-
 
 const linkStyle = {
     color: 'white', // Ändere die Linkfarbe nach Bedarf
