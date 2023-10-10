@@ -70,9 +70,9 @@ const Footer = () => {
               </i>
             </FooterLink>
             <FooterLink href="#">
-              <i className="fab linked-in">
+              <i className="https://www.linkedin.com/company/99531770/admin/feed/posts/">
 
-                  {language === "de" ? "Linked In(In Arbeit)" : "Linked In(WIP)"}
+                  {language === "de" ? "Linked In" : "Linked In"}
 
               </i>
             </FooterLink>
