@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from './useLanguage';
+
 const logoImageUrl = './Logo_No_Background_thin.png';
 
 const textContent = {
   de: {
     main: 'Main',
     vision: 'Vision',
-    company: "Leistungen",
+    company: 'Leistungen',
     aboutUs: 'Über uns',
     projects: 'Projekte',
     language: 'EN',
@@ -15,7 +15,7 @@ const textContent = {
   en: {
     main: 'Main',
     vision: 'Vision',
-    company: "Services",
+    company: 'Services',
     aboutUs: 'About us',
     projects: 'Projects',
     language: 'DE',
@@ -33,19 +33,17 @@ const menuBarStyle = {
   backgroundColor: 'rgba(0, 0, 0, 0.8)',
   padding: '0.3rem',
 };
+
 const menuBarStyleSmall = {
   position: 'fixed',
+  minWidth: '100px',
   top: '75px',
   right: '0',
-  width: '20%',
-
-
-  alignItems: 'flex-end', // Ausrichtung am unteren Rand
+  alignItems: 'flex-end',
   justifyContent: 'space-between',
   backgroundColor: 'rgba(0, 0, 0, 0.8)',
   padding: '0.3rem',
 };
-
 
 const logoStyle = {
   height: '60px',
@@ -56,9 +54,9 @@ const menuItemContainerStyle = {
   padding: '0px 0px',
   display: 'grid',
 };
+
 const menuItemContainerStyleBig = {
   padding: '0px 20px',
-
 };
 
 const menuItemStyle = {
@@ -71,6 +69,7 @@ const menuItemStyle = {
   fontSize: '16px',
   transition: 'color 0.3s, background 0.3s',
 };
+
 const menuSmallItemStyle = {
   padding: '10px 10px',
   background: 'rgba(0, 0, 0, 0)',
@@ -111,7 +110,7 @@ const MenuButtonStyle = {
 
 const handleButtonHover = (event) => {
   event.target.style.color = '#d5d5d5';
-  event.target.style.background = 'rgba(150,150,150,0.2)';
+  event.target.style.background = 'rgba(150, 150, 150, 0.2)';
 };
 
 const handleButtonLeave = (event) => {
@@ -127,22 +126,41 @@ const scrollToSection = (sectionID) => {
 };
 
 function AnimatedHeadline() {
-  const { language, toggleLanguage } = useLanguage(); // Verwenden Sie den Sprachstatus und die toggleLanguage-Funktion aus dem LanguageProvider
+  const { language, toggleLanguage } = useLanguage();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [headerHeight, setHeaderHeight] = useState(0);
+
+  useEffect(() => {
+    const updateHeaderHeight = () => {
+      const header = document.getElementById('menuBar');
+      if (header) {
+        setHeaderHeight(header.offsetHeight);
+      }
+    };
+
+    updateHeaderHeight();
+
+    window.addEventListener('resize', updateHeaderHeight);
+
+    return () => {
+      window.removeEventListener('resize', updateHeaderHeight);
+    };
+  }, []);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const bodyStyle = {
+    marginTop: isMobileMenuOpen ? `${headerHeight}px` : '0',
+    transition: 'margin-top 0.3s',
+  };
+
   return (
-    <div>
-      <div style={menuBarStyle}>
-        <a href={"/"} rel="noopener noreferrer">
-          <img
-            src={logoImageUrl}
-            alt="Logo"
-            style={logoStyle}
-          />
+    <div style={bodyStyle}>
+      <div id="menuBar" style={menuBarStyle}>
+        <a href="/" rel="noopener noreferrer">
+          <img src={logoImageUrl} alt="Logo" style={logoStyle} />
         </a>
         {window.innerWidth <= 768 ? (
           <div>
@@ -154,7 +172,6 @@ function AnimatedHeadline() {
             >
               ☰
             </button>
-
           </div>
         ) : (
           <div style={menuItemContainerStyleBig}>
