@@ -91,8 +91,8 @@ function App() {
                         </h2>
                         <p>
                             {language === 'de'
-                                ? 'Dieses Projekt wurde im Rahmen einer Bachelor-Abschlussarbeit entwickelt und erforscht eine potenzielle alternative Möglichkeit zur Fortbewegung in der virtuellen Realität (VR). Redirected Walking ist ein Ansatz, bei dem der Nutzer nicht auf gängige Methoden wie Teleportation oder Joystick-Bewegungen angewiesen ist. Stattdessen wird der gesamte physisch verfügbare Raum effektiv genutzt. Bei dieser Methode wird der Nutzer durch das System auf verschiedene Weisen gelenkt. Entweder wird er ständig in die Mitte des virtuellen Raums geführt oder er bewegt sich auf einer Umlaufbahn um das Zentrum herum. Diese Umleitung erfolgt, indem die Kamera in der virtuellen Umgebung kontinuierlich um einen geringen Winkel angepasst und gedreht wird. Da diese Anpassung minimal ist, nimmt der Spieler sie nicht bewusst wahr. Für ihn sieht es so aus, als ob er sich geradlinig bewegt, obwohl er in Wirklichkeit Kurven läuft.'
-                                : 'This project was developed as part of a bachelor\'s thesis and explores a potential alternative way of moving in virtual reality (VR). Redirected Walking is an approach where the user is not reliant on common methods like teleportation or joystick movements. Instead, the entire physically available space is effectively utilized. In this method, the user is guided in various ways by the system. Either they are constantly directed to the center of the virtual space, or they move in an orbit around the center. This redirection is achieved by continuously adjusting and rotating the camera in the virtual environment at a slight angle. Since this adjustment is minimal, the player does not consciously perceive it. For them, it appears as if they are moving in a straight line, even though they are actually walking in curves.'}
+                                ? 'Dieses Projekt erforscht Redirected Walking als alternative Methode zur Fortbewegung in der virtuellen Realität.'
+                                : 'This project explores Redirected Walking as an alternative method for locomotion in virtual reality.'}
                         </p>
                     </section>
                 </section>
@@ -108,6 +108,18 @@ function App() {
                 <section style={sectionStyle}>
                     <div style={imageContainerStyle}>
                     </div>
+                </section>
+                <section style={sectionStyle}>
+                    <section style={sectionTextStyle}>
+                        <h2>
+                            {language === 'de' ? 'Projektbeschreibung' : 'Project Description'}
+                        </h2>
+                        <p>
+                            {language === 'de'
+                                ? 'Dieses Projekt wurde im Rahmen einer Bachelor-Abschlussarbeit entwickelt und erforscht eine potenzielle alternative Möglichkeit zur Fortbewegung in der virtuellen Realität (VR). Redirected Walking ist ein Ansatz, bei dem der Nutzer nicht auf gängige Methoden wie Teleportation oder Joystick-Bewegungen angewiesen ist. Stattdessen wird der gesamte physisch verfügbare Raum effektiv genutzt. Bei dieser Methode wird der Nutzer durch das System auf verschiedene Weisen gelenkt. Entweder wird er ständig in die Mitte des virtuellen Raums geführt oder er bewegt sich auf einer Umlaufbahn um das Zentrum herum. Diese Umleitung erfolgt, indem die Kamera in der virtuellen Umgebung kontinuierlich um einen geringen Winkel angepasst und gedreht wird. Da diese Anpassung minimal ist, nimmt der Spieler sie nicht bewusst wahr. Für ihn sieht es so aus, als ob er sich geradlinig bewegt, obwohl er in Wirklichkeit Kurven läuft.'
+                                : 'This project was developed as part of a bachelor\'s thesis and explores a potential alternative way of moving in virtual reality (VR). Redirected Walking is an approach where the user is not reliant on common methods like teleportation or joystick movements. Instead, the entire physically available space is effectively utilized. In this method, the user is guided in various ways by the system. Either they are constantly directed to the center of the virtual space, or they move in an orbit around the center. This redirection is achieved by continuously adjusting and rotating the camera in the virtual environment at a slight angle. Since this adjustment is minimal, the player does not consciously perceive it. For them, it appears as if they are moving in a straight line, even though they are actually walking in curves.'}
+                        </p>
+                    </section>
                 </section>
                 <section style={sectionStyle}>
                     <h2>

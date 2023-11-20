@@ -32,7 +32,7 @@ const mainStyle = {
 };
 
 const sectionStyle = {
-    margin: '20px',
+    margin: '60px 20px', // oben rechts unten links
     textAlign: 'left',
     fontFamily: 'Georgia, serif', // Beispiel für eine andere Schriftart
 };
@@ -76,6 +76,30 @@ function App() {
             </header>
             <MenuBar />
             <main style={mainStyle}>
+
+                <section style={sectionStyle}>
+                    <section style={sectionTextStyle}>
+                        <h2>
+                            {language === 'de' ? 'Kurzbeschreibung' : 'Short Description'}
+                        </h2>
+                        <p>
+                            {language === 'de'
+                                ? 'Das Bachelor-Abschlussprojekt Memoria nutzt virtuelle Realität, um gesunden Menschen die Erfahrung von Demenzsymptomen näherzubringen, mit dem Ziel, Empathie und Bewusstsein für die Herausforderungen von Menschen mit Demenz zu fördern.'
+                                : 'The Bachelor project Memoria utilizes virtual reality to immerse healthy individuals in the experience of dementia symptoms, aiming to foster empathy and awareness regarding the challenges faced by people living with dementia.'}
+                        </p>
+                    </section>
+                </section>
+
+                <section style={sectionStyle}>
+                    <h2>
+                        {language === 'de' ? 'Trailer' : 'Trailer'}
+                    </h2>
+                    <video controls width="100%">
+                        <source src="Memoria_Trailer.mp4" type="video/mp4" />
+                        {language === 'de' ? 'Dein Browser unterstützt das Video-Tag nicht.' : 'Your browser does not support the video tag.'}
+                    </video>
+                </section>
+
                 <section style={sectionStyle}>
                     <section style={sectionTextStyle}>
                         <h2>
@@ -90,58 +114,50 @@ function App() {
                 </section>
                 <section style={sectionStyle}>
                     <h2>
-                        {language === 'de' ? 'Trailer' : 'Trailer'}
-                    </h2>
-                    <video controls width="100%">
-                        <source src="Memoria_Trailer.mp4" type="video/mp4" />
-                        {language === 'de' ? 'Dein Browser unterstützt das Video-Tag nicht.' : 'Your browser does not support the video tag.'}
-                    </video>
-                </section>
-                <section style={sectionStyle}>
-                    <h2>
                         {language === 'de' ? 'Screenshots' : 'Screenshots'}
                     </h2>
                     <div style={imageContainerStyle}>
                         <img src="Memoria02.png" alt={language === 'de' ? 'Bild 1' : 'Image 1'} style={{
-        ...imageStyle,
-        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
-    }} />
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
                         <img src="Memoria03.png" alt={language === 'de' ? 'Bild 2' : 'Image 2'} style={{
-        ...imageStyle,
-        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
-    }} />
-                        <img src="Memoria01.png" alt={language === 'de' ? 'Bild 3' : 'Image 3'} style={{
-        ...imageStyle,
-        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
-    }} />
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
+                        <img src="Memoria.jpg" alt={language === 'de' ? 'Bild 3' : 'Image 3'} style={{
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
                         <img src="Memoria07.png" alt={language === 'de' ? 'Bild 4' : 'Image 4'} style={{
-        ...imageStyle,
-        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
-    }} />
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
                         <img src="Memoria08.png" alt={language === 'de' ? 'Bild 5' : 'Image 5'} style={{
-        ...imageStyle,
-        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
-    }} />
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
                         <img src="Memoria09.png" alt={language === 'de' ? 'Bild 6' : 'Image 6'} style={{
-        ...imageStyle,
-        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
-    }} />
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
                         <img src="Memoria04.png" alt={language === 'de' ? 'Bild 7' : 'Image 7'} style={{
-        ...imageStyle,
-        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
-    }} />
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
                         <img src="Memoria05.png" alt={language === 'de' ? 'Bild 8' : 'Image 8'} style={{
-        ...imageStyle,
-        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
-    }} />
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
                         <img src="Memoria06.png" alt={language === 'de' ? 'Bild 9' : 'Image 9'} style={{
-        ...imageStyle,
-        ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
-    }} />
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
 
 
                     </div>
                 </section>
+
                 <section style={sectionStyle}>
                     <h2>
                         {language === 'de' ? 'Links' : 'Links'}
@@ -152,6 +168,9 @@ function App() {
                         </a>
                         <a href="https://portfolio.fh-salzburg.ac.at/projects/2022-memoria-mmp3" style={linkStyle}>
                             {language === 'de' ? 'Portfolio FH Salzburg' : 'FH Salzburg Portfolio'}
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=2nfMrxMgm1o&feature=youtu.be&ab_channel=VirtualVisions" style={linkStyle}>
+                            {language === 'de' ? 'Memoria Playtrough' : 'Memora Playtrough'}
                         </a>
                     </p>
                 </section>

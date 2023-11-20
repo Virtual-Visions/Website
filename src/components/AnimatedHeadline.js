@@ -17,6 +17,16 @@ function AnimatedHeadline() {
     overflow: 'hidden', // Überlauf verhindern
   };
 
+  const videoStyle = {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    opacity: 1,
+  };
+
   const headlineContainerStyle = {
     alignItems: 'center',
     justifyContent: 'center',
@@ -33,17 +43,20 @@ function AnimatedHeadline() {
 
   return (
     <div id="containerStyle" style={containerStyle}>
-      <div className="imageStyle"></div>
+      <video autoPlay muted loop style={videoStyle}>
+        <source src="Header_Video.mp4" type="video/mp4" />
+        Dein Browser unterstützt das Video-Tag nicht.
+      </video>
+
       <div style={headlineContainerStyle} className="headline-container">
-      <div style={headlineStyle} className="headline">
-        <animated.h1 style={animationProps}>Virtual Visions</animated.h1>
+        {/* <div style={headlineStyle} className="headline">
+          <animated.h1 style={animationProps}>Virtual Visions</animated.h1>
+        </div> */}
       </div>
-    </div>
-      <MenuBar/>
-      
+
+      <MenuBar />
     </div>
   );
 }
 
 export default AnimatedHeadline;
-

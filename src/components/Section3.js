@@ -7,7 +7,7 @@ const App = () => {
 
   const projects = [
     {
-      imageSrc: 'Memoria.jpg',
+      imageSrc: 'Memoria01.png',
       headerTextDe: 'Memoria',
       headerTextEn: 'Memoria ',
       url: '/memoria',

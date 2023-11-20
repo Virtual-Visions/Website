@@ -87,15 +87,15 @@ function App() {
             </header>
             <MenuBar />
             <main style={mainStyle}>
-                <section style={sectionStyle}>
+            <section style={sectionStyle}>
                     <section style={sectionTextStyle}>
                         <h2>
-                            {language === 'de' ? 'Projektbeschreibung' : 'Project Description'}
+                            {language === 'de' ? 'Kurzbeschreibung' : 'Short Description'}
                         </h2>
                         <p>
                             {language === 'de'
-                                ? 'Dieses Projekt entstand im Rahmen einer Abschlussbachelorarbeit und konzentriert sich auf die Implementierung eines innovativen freien Greif-Systems in VR. Dies bedeutet, dass Benutzer in der VR-Umgebung ihre Hände frei bewegen können, ohne auf Controller oder andere Eingabegeräte angewiesen zu sein und Gegenstände greifen können, wie sie es aus der Realität gewohnt sind. Diese fortschrittliche Technologie eröffnet aufregende Möglichkeiten für eine noch immersivere VR-Erfahrung und erlaubt natürliche Gesten und Interaktionen in virtuellen Welten.'
-                                : 'This project was created as part of a bachelor\'s thesis and focuses on the implementation of an innovative free grasping system in VR. This means that users in the VR environment can freely move their hands without the need for controllers or other input devices and can grasp objects as they do in reality. This advanced technology opens up exciting possibilities for an even more immersive VR experience and allows for natural gestures and interactions in virtual worlds.'}
+                                ? 'Dieses Projekt beinhaltet die Implementierung eines freien Greif-Systems in der virtuellen Realität, das Benutzern erlaubt, ihre Hände ohne Controller zu bewegen und natürliche Greifaktionen in VR zu erleben.'
+                                : 'This project involves implementing a free-hand grasping system in virtual reality, allowing users to move their hands without controllers and experience natural grasping actions in VR.'}
                         </p>
                     </section>
                 </section>
@@ -128,6 +128,18 @@ function App() {
 
                         {/* Füge weitere Bilder hinzu */}
                     </div>
+                </section>
+                <section style={sectionStyle}>
+                    <section style={sectionTextStyle}>
+                        <h2>
+                            {language === 'de' ? 'Projektbeschreibung' : 'Project Description'}
+                        </h2>
+                        <p>
+                            {language === 'de'
+                                ? 'Dieses Projekt entstand im Rahmen einer Abschlussbachelorarbeit und konzentriert sich auf die Implementierung eines innovativen freien Greif-Systems in VR. Dies bedeutet, dass Benutzer in der VR-Umgebung ihre Hände frei bewegen können, ohne auf Controller oder andere Eingabegeräte angewiesen zu sein und Gegenstände greifen können, wie sie es aus der Realität gewohnt sind. Diese fortschrittliche Technologie eröffnet aufregende Möglichkeiten für eine noch immersivere VR-Erfahrung und erlaubt natürliche Gesten und Interaktionen in virtuellen Welten.'
+                                : 'This project was created as part of a bachelor\'s thesis and focuses on the implementation of an innovative free grasping system in VR. This means that users in the VR environment can freely move their hands without the need for controllers or other input devices and can grasp objects as they do in reality. This advanced technology opens up exciting possibilities for an even more immersive VR experience and allows for natural gestures and interactions in virtual worlds.'}
+                        </p>
+                    </section>
                 </section>
                 <section style={sectionStyle}>
                     <h2>

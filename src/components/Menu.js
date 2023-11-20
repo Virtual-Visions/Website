@@ -7,16 +7,16 @@ const textContent = {
   de: {
     main: 'Main',
     vision: 'Vision',
-    company: "Über Uns",
-    aboutUs: 'Team',
+    company: "Leistungen",
+    aboutUs: 'Über uns',
     projects: 'Projekte',
     language: 'EN',
   },
   en: {
     main: 'Main',
     vision: 'Vision',
-    company: "About Us",
-    aboutUs: 'Team',
+    company: "Services",
+    aboutUs: 'About us',
     projects: 'Projects',
     language: 'DE',
   },
@@ -158,14 +158,7 @@ function AnimatedHeadline() {
           </div>
         ) : (
           <div style={menuItemContainerStyleBig}>
-            <button
-              style={menuItemStyle}
-              onMouseEnter={handleButtonHover}
-              onMouseLeave={handleButtonLeave}
-              onClick={() => scrollToSection('containerStyle')}
-            >
-              {textContent[language].main}
-            </button>
+
             <button
               style={menuSmallItemStyle}
               onMouseEnter={handleButtonHover}
@@ -213,14 +206,7 @@ function AnimatedHeadline() {
       {isMobileMenuOpen && (
         <div style={menuBarStyleSmall}>
           <div style={menuItemContainerStyle}>
-            <button
-              style={menuSmallItemStyle}
-              onMouseEnter={handleButtonHover}
-              onMouseLeave={handleButtonLeave}
-              onClick={() => scrollToSection('containerStyle')}
-            >
-              {textContent[language].main}
-            </button>
+
             <button
               style={menuSmallItemStyle}
               onMouseEnter={handleButtonHover}
@@ -253,8 +239,6 @@ function AnimatedHeadline() {
             >
               {textContent[language].aboutUs}
             </button>
-            
-            
             <button
               style={languageButtonStyle}
               onMouseEnter={handleButtonHover}

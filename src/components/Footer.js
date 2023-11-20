@@ -29,13 +29,13 @@ const Footer = () => {
               {language === "de" ? "Abschnitte" : "Sections"}
             </Heading>
             <FooterLink onClick={() => scrollToSection("section4")}>
-              {language === "de" ? "Über uns" : "About us"}
+              {language === "de" ? "Leistung" : "Services"}
             </FooterLink>
             <FooterLink onClick={() => scrollToSection("section1")}>
               {language === "de" ? "Vision" : "Vision"}
             </FooterLink>
             <FooterLink onClick={() => scrollToSection("section2")}>
-              {language === "de" ? "Team" : "Team"}
+              {language === "de" ? "Über uns" : "About us"}
             </FooterLink>
             <FooterLink onClick={() => scrollToSection("section3")}>
               {language === "de" ? "Projekte" : "Projects"}
@@ -69,8 +69,8 @@ const Footer = () => {
 
               </i>
             </FooterLink>
-            <FooterLink href="#">
-              <i className="https://www.linkedin.com/company/99531770/admin/feed/posts/">
+            <FooterLink href="https://www.linkedin.com/in/virtual-visions-45a712294/">
+              <i className="fab fa-linkedIn">
 
                   {language === "de" ? "Linked In" : "Linked In"}
 

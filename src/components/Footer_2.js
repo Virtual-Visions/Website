@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Box,
   Container,
@@ -8,8 +8,10 @@ import {
   Heading,
   Text,
 } from "./FooterStyles";
+import { LanguageContext } from "./LanguageProvider";
 
 const Footer = () => {
+  const { language } = useContext(LanguageContext); // Verwende den LanguageContext
   return (
     <Box>
       <Container>
@@ -22,23 +24,31 @@ const Footer = () => {
           <Column>
             <Heading>Social Media</Heading>
             <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>Facebook</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
               <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>Instagram</span>
+
+                  {language === "de" ? "Instagram(In Arbeit)" : "Instagram(WIP)"}
+
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            <FooterLink href="https://twitter.com/VirtualVisionV">
               <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>Twitter</span>
+
+                  {language === "de" ? "Twitter" : "Twitter"}
+
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            <FooterLink href="https://www.youtube.com/channel/UC-_iOjk6FTrQt0w5hVPYFMA">
               <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>Youtube</span>
+
+                  {language === "de" ? "Youtube" : "Youtube"}
+
+              </i>
+            </FooterLink>
+            <FooterLink href="https://www.linkedin.com/in/virtual-visions-45a712294/">
+              <i className="fab fa-LinkedIn">
+
+                  {language === "de" ? "Linked In" : "Linked In"}
+
               </i>
             </FooterLink>
           </Column>
