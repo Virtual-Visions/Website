@@ -38,6 +38,7 @@
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
   height: 100vh; /* Make the container full height of the viewport */
+  opacity: 100%;
 }
 
 .headline {
@@ -45,6 +46,7 @@
   font-size: 3rem; /* Adjust the font size as needed */
   text-align: center; /* Center text horizontally */
   padding: 1rem; /* Adjust padding as needed */
+  
 }
 
 .imageStyle {

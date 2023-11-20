@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './AnimatedHeadline.css';
-import MenuBar from "./Menu.js";
+import MenuBar from './Menu.js';
 
 function AnimatedHeadline() {
   const animationProps = useSpring({
@@ -36,23 +36,33 @@ function AnimatedHeadline() {
   const headlineStyle = {
     color: '#d5d5d5', // Überschrift in Grauton geändert
     fontSize: 50,
-    margin: '350px',
+    margin: '20px', // Anpassung des Margins
     flex: '1',
     padding: '20px',
   };
 
+
+  const isMobileDevice = window.innerWidth < 768;
+
   return (
     <div id="containerStyle" style={containerStyle}>
-      <video autoPlay muted loop style={videoStyle}>
-        <source src="Header_Video.mp4" type="video/mp4" />
-        Dein Browser unterstützt das Video-Tag nicht.
-      </video>
+      {isMobileDevice ? (
+        
+        <div style={headlineContainerStyle} className="headline-container">
+          <div className="imageStyle"></div>
+          <div style={headlineStyle} className="headline">
+            <animated.h1 style={animationProps}>Virtual Visions</animated.h1>
+          </div>
+          
+        </div>
+      ) : (
+        <video autoPlay muted loop style={videoStyle}>
+          <source src="Header_Video.mp4" type="video/mp4" />
+          Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+      )}
 
-      <div style={headlineContainerStyle} className="headline-container">
-        {/* <div style={headlineStyle} className="headline">
-          <animated.h1 style={animationProps}>Virtual Visions</animated.h1>
-        </div> */}
-      </div>
+
 
       <MenuBar />
     </div>
