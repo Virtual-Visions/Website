@@ -1,0 +1,130 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container-s5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3%;
+  margin-left: 3%;
+  padding: 30px; /* Innenabstand für den Container-S5 */
+  height: 100%; /* Setzen Sie die Höhe des Container-S5 auf 100% */
+}
+
+.section-content {
+  display: flex;
+  align-items: stretch; /* Streckt die Elemente über die gesamte Höhe */
+  height: 100%;
+  margin-bottom: 5rem;
+}
+
+.section-title-s5 {
+  font-size: 2.5rem; /* Größere Schrift für den Titel */
+  color: #333; /* Dunklere Textfarbe */
+  margin-bottom: 20px; /* Unten etwas Platz für den Titel */
+  margin-top: 3rem;
+}
+
+.video-container {
+  flex: 1.5;
+  border-radius: 15px;
+  margin-right: 20px; /* Rechter Abstand zum Button-Bereich */
+  overflow: hidden;
+  height: 100%; /* Setzen Sie die Höhe des Video-Containers auf 100% */
+}
+
+video {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.video-text {
+  text-align: start;
+  color: #555; /* Leicht dunklere Textfarbe */
+  font-size: 1.2rem; /* Kleinere Schriftgröße für den Text */
+  margin-right: 5%;
+}
+
+.button-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; /* Setzen Sie die Höhe der Button-Liste auf 100% */
+}
+
+.button-s5 {
+  display: flex;
+  /* Änderung: Button-Inhalt in Spaltenrichtung anordnen */
+  align-items: stretch; /* Änderung: Streckt die Buttons über die gesamte Höhe */
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 1.5rem;
+  background-color: rgba(128,128,128,.2);
+  cursor: pointer;
+  flex-grow: 1; /* Änderung: Gleichmäßige Verteilung der Höhe auf die Buttons */
+  padding: 0;
+  box-shadow: 0 4px 4px rgba(10,10,10,.2);
+}
+@media screen and (max-width: 768px) {
+  .section-content {
+    flex-direction: column; /* Änderung: Bei kleineren Bildschirmen in Spaltenrichtung anzeigen */
+  }
+
+  .video-container,
+  .button-list {
+    flex: 1; /* Änderung: Vollständige Breite auf kleinen Bildschirmen */
+    margin-right: 0; /* Entfernen Sie den rechten Rand auf kleinen Bildschirmen */
+    margin-bottom: 20px; /* Abstand zwischen Video-Container und Button-Liste */
+  }
+}
+
+.button-text {
+  flex: 1.15;
+  margin-right: 10px;
+  color: #333; /* Dunklere Textfarbe */
+  font-size: 1.5rem; /* Größere Schriftgröße für den Text */
+  align-self: flex-start;
+  text-align: start;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 10%;
+}
+
+.button-image-container {
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 243/138;
+}
+
+.button-image {
+  width: 100%;
+  height: 100%; /* Setzen Sie die Höhe des Bildes auf 100% */
+
+  border-radius: 15px;
+}
+
+/* Hover-Effekt für die Buttons */
+.button-s5:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Etwas stärkerer Schatten bei Hover */
+}
+
+/* Klick-Effekt für die Buttons */
+.button-s5:active {
+  transform: translateY(0);
+  box-shadow: none; /* Entfernen Sie den Schatten beim Klicken */
+  border-radius: 15px;
+  border: 3px solid rgba(0, 0, 0, 0.4); /* Schwarze Border-Farbe beim Klicken */
+  transition: border 0.05s ease-in-out; /* Sanfter Übergang für den Klick-Effekt */
+}
+
+/* Entfernen Sie die Border-Farbe */
+.button-s5 {
+  border: none;
+  outline: none;
+}

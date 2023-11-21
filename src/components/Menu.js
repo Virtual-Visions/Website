@@ -7,18 +7,20 @@ const textContent = {
   de: {
     main: 'Main',
     vision: 'Vision',
-    company: 'Leistungen',
+    company: 'Partner',
     aboutUs: 'Über uns',
     projects: 'Projekte',
     language: 'EN',
+    possibilities: 'Überblick',
   },
   en: {
     main: 'Main',
     vision: 'Vision',
-    company: 'Services',
+    company: 'Partner',
     aboutUs: 'About us',
     projects: 'Projects',
     language: 'DE',
+    possibilities: 'Overview',
   },
 };
 
@@ -175,15 +177,23 @@ function AnimatedHeadline() {
           </div>
         ) : (
           <div style={menuItemContainerStyleBig}>
-
             <button
-              style={menuSmallItemStyle}
+              style={menuItemStyle}
               onMouseEnter={handleButtonHover}
               onMouseLeave={handleButtonLeave}
               onClick={() => scrollToSection('section4')}
             >
               {textContent[language].company}
             </button>
+            <button
+              style={menuItemStyle}
+              onMouseEnter={handleButtonHover}
+              onMouseLeave={handleButtonLeave}
+              onClick={() => scrollToSection('section5')}
+            >
+              {textContent[language].possibilities}
+            </button>
+            
             <button
               style={menuItemStyle}
               onMouseEnter={handleButtonHover}
@@ -223,7 +233,7 @@ function AnimatedHeadline() {
       {isMobileMenuOpen && (
         <div style={menuBarStyleSmall}>
           <div style={menuItemContainerStyle}>
-
+          
             <button
               style={menuSmallItemStyle}
               onMouseEnter={handleButtonHover}
@@ -231,6 +241,14 @@ function AnimatedHeadline() {
               onClick={() => scrollToSection('section4')}
             >
               {textContent[language].company}
+            </button>
+            <button
+              style={menuSmallItemStyle}
+              onMouseEnter={handleButtonHover}
+              onMouseLeave={handleButtonLeave}
+              onClick={() => scrollToSection('section5')}
+            >
+              {textContent[language].possibilities}
             </button>
             <button
               style={menuSmallItemStyle}

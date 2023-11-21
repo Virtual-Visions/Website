@@ -47,7 +47,7 @@ function AnimatedHeadline() {
   return (
     <div id="containerStyle" style={containerStyle}>
       {isMobileDevice ? (
-        
+
         <div style={headlineContainerStyle} className="headline-container">
           <div className="imageStyle"></div>
           <div style={headlineStyle} className="headline">
