@@ -62,6 +62,7 @@
   left: 0;
 }
 
+
 /* Media query for small screens */
 @media (max-width: 768px) {
   .imageStyle {

@@ -14,23 +14,36 @@
 }
 .phrase {
   text-align: justify;
+  line-height: 150%;
+  font-size: 1.2rem;
+
+}
+
+@media screen and (max-width: 600px) {
+.phrase {
+  text-align:left;
+  font-size: 3vw;
+  line-height: 200%;
+  padding: 1rem 5%;
+}
+
 }
 .icon img {
-  width: 20%;
+  width: 10%;
   height: auto;
   /* Andere Stile hier einfügen */
 }
 
 /* Stile für den Abschnittstitel */
 .section-title {
-  padding: 2rem 30%; /* Adjust padding for smaller screens */
-  font-size: 20px;
+  padding: 2rem 20%; /* Adjust padding for smaller screens */
+  font-size: 30px;
 
   /* Andere Stile hier einfügen */
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .text-passage {
     padding: 1rem; /* Reduce padding for smaller screens */
   }
@@ -48,8 +61,16 @@
   }
 
   .section-title {
-    padding: 2rem 5%; /* Adjust padding for smaller screens */
+    padding: 2rem 2%; /* Adjust padding for smaller screens */
   }
 
   
+}
+@media screen and (max-width: 1200px) {
+  .section-title {
+    padding: 2rem 10%; /* Adjust padding for smaller screens */
+    font-size: 30px;
+  
+    /* Andere Stile hier einfügen */
+  }
 }

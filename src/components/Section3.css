@@ -1,6 +1,17 @@
 /* Default styles for large screens */
+
+
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+}
+
 .App {
     text-align: center;
+    
     
   }
   
@@ -9,6 +20,7 @@
     font-size: 2rem;
     margin-bottom: 10rem;
     color: #333;
+    
   }
   
   .project-container {
