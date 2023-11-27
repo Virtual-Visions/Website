@@ -42,6 +42,15 @@
   /* Andere Stile hier einfügen */
 }
 
+
+@media screen and (max-width: 1200px) {
+  .section-title {
+    padding: 2rem 10%; /* Adjust padding for smaller screens */
+    font-size: 30px;
+  
+    /* Andere Stile hier einfügen */
+  }
+}
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
   .text-passage {
@@ -61,16 +70,9 @@
   }
 
   .section-title {
-    padding: 2rem 2%; /* Adjust padding for smaller screens */
+    font-size: 4vw;
+    padding: 2rem 10%; /* Adjust padding for smaller screens */
   }
 
   
-}
-@media screen and (max-width: 1200px) {
-  .section-title {
-    padding: 2rem 10%; /* Adjust padding for smaller screens */
-    font-size: 30px;
-  
-    /* Andere Stile hier einfügen */
-  }
 }
