@@ -145,14 +145,18 @@ video {
 
   }
   .video-text {
-
-    font-size: 4vw; /* Kleinere Schriftgröße für den Text */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3.5vw; /* Kleinere Schriftgröße für den Text */
     margin-left: 5%;
 
   }
 
   .button-s5 {
     margin-bottom: 3rem;
+  }
+  .section-title-s5{
+    font-size: 6vw;
   }
 }
 

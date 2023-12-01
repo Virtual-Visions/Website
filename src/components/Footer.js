@@ -89,7 +89,10 @@ const Footer = () => {
             </Text>
             <Text>
               <b>{language === "de" ? "Telefon" : "Phone"}</b>
-              <br></br>+43 650 2601493 +49 151 42851038
+              <br></br>
+              +43 650 2601493 
+              <br></br>
+              +49 151 42851038
             </Text>
           </Column>
         </Row>

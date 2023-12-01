@@ -51,6 +51,9 @@ cursor: pointer;
     color: green;
     transition: 200ms ease-in;
 }
+@media (max-width: 1000px) {
+  font-size: 14px;
+}
 `;
 
 export const Text = styled.a`
@@ -58,6 +61,9 @@ color: #fff;
 margin-bottom: 20px;
 font-size: 18px;
 text-decoration: none;
+@media (max-width: 1000px) {
+  font-size: 14px;
+}
 `;
 
 export const Heading = styled.p`
