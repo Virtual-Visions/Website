@@ -10,13 +10,20 @@
 }
 
 .imgtext {
-  width: 80%;
+  width: 70%;
 }
 .phrase {
   text-align: justify;
   line-height: 150%;
   font-size: 1.2rem;
 
+}
+
+.section-title {
+  padding: 2rem 20%; /* Adjust padding for smaller screens */
+  font-size: 20px;
+
+  /* Andere Stile hier einfügen */
 }
 
 @media screen and (max-width: 600px) {
@@ -29,7 +36,7 @@
 
 }
 .icon img {
-  width: 10%;
+  width: 15%;
   height: auto;
   /* Andere Stile hier einfügen */
 }
@@ -39,8 +46,13 @@
 
 
 @media screen and (max-width: 1200px) {
+  .imgtext {
+    width: 90%;
+  }
   .section-title {
-    padding: 2rem 10%; /* Adjust padding for smaller screens */
+
+    padding: 2rem 12%; /* Adjust padding for smaller screens */
+    padding-top: 5rem;
     font-size: 30px;
   
     /* Andere Stile hier einfügen */
