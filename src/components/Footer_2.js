@@ -17,16 +17,20 @@ const Footer = () => {
       <Container>
         <Row>
           <Column>
-            <Heading>About Us</Heading>
-            <FooterLink href="/Imprint">Imprint</FooterLink>
+            <Heading>
+            {language === "de" ? "Über uns" : "About us"}
+            </Heading>
+            <FooterLink href="/Imprint">{language === "de" ? "Impressum" : "Imprint"}</FooterLink>
             <FooterLink href="/">Home</FooterLink>
           </Column>
           <Column>
-            <Heading>Social Media</Heading>
+            <Heading>
+            {language === "de" ? "Soziale Medien" : "Social Media"}
+            </Heading>
             <FooterLink href="#">
-              <i className="fab fa-instagram">
+              <i className="https://www.instagram.com/virtual___visions/">
 
-                  {language === "de" ? "Instagram(In Arbeit)" : "Instagram(WIP)"}
+                  {language === "de" ? "Instagram" : "Instagram"}
 
               </i>
             </FooterLink>
@@ -53,7 +57,9 @@ const Footer = () => {
             </FooterLink>
           </Column>
           <Column>
-            <Heading>Contact Us</Heading>
+            <Heading>
+            {language === "de" ? "Kontakt" : "Contact Us"}
+            </Heading>
             <Text>
               <b>E-Mail</b> business.virtualvisions@gmail.com
             </Text>

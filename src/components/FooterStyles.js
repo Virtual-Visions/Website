@@ -25,14 +25,14 @@ export const Column = styled.div`
 display: flex;
 flex-direction: column;
 text-align: left;
-margin-left: 60px;
+margin-left: 0px;
 `;
 
 export const Row = styled.div`
 display: grid;
 grid-template-columns: repeat(auto-fill,
-                        minmax(185px, 1fr));
-grid-gap: 20px;
+                        minmax(300px, 1fr));
+grid-gap: 40px;
 
 @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill,

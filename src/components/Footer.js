@@ -48,10 +48,10 @@ const Footer = () => {
             <Heading>
               {language === "de" ? "Soziale Medien" : "Social Media"}
             </Heading>
-            <FooterLink href="#">
+            <FooterLink href="https://www.instagram.com/virtual___visions/">
               <i className="fab fa-instagram">
 
-                  {language === "de" ? "Instagram(In Arbeit)" : "Instagram(WIP)"}
+                  {language === "de" ? "Instagram" : "Instagram"}
 
               </i>
             </FooterLink>
