@@ -24,3 +24,10 @@
   padding: 2rem 10rem;
 }
 
+@media (max-width: 768px) {
+  .cooperation-image{
+    max-height: 5rem;
+    padding: 2rem 3rem;
+  }
+}
+

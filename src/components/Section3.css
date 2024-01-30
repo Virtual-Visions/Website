@@ -166,11 +166,18 @@ body {
   }
   .project-container{
       grid-auto-columns: 70%;
-      grid-template-rows: 1fr 1fr;
+
 
   }
   .project
   {
     padding: var(--spacer);
+  }
+}
+
+@media (pointer:coarse){
+  .arrow,
+  .arrowLeft {
+    display: none; /* Verberge die Pfeile auf Mobiltelefonen */
   }
 }
