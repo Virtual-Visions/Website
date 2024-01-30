@@ -69,7 +69,7 @@ function App() {
     return (
         <div style={appStyle}>
             <header style={headerStyle}>
-                <div className='header-image'></div>
+                <div className='header-image-Memoria'></div>
                 <h1 style={headerTextStyles}>
                     {language === 'de' ? 'Memoria' : 'Memoria'}
                 </h1>
@@ -141,15 +141,15 @@ function App() {
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="Memoria04.png" alt={language === 'de' ? 'Bild 7' : 'Image 7'} style={{
+                        <img src="Memoria04.jpg" alt={language === 'de' ? 'Bild 7' : 'Image 7'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="Memoria05.png" alt={language === 'de' ? 'Bild 8' : 'Image 8'} style={{
+                        <img src="Memoria05.jpg" alt={language === 'de' ? 'Bild 8' : 'Image 8'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="Memoria06.png" alt={language === 'de' ? 'Bild 9' : 'Image 9'} style={{
+                        <img src="Memoria06.jpg" alt={language === 'de' ? 'Bild 9' : 'Image 9'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />

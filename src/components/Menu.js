@@ -34,6 +34,7 @@ const menuBarStyle = {
   justifyContent: 'space-between',
   backgroundColor: 'rgba(0, 0, 0, 0.8)',
   padding: '0.3rem',
+  zIndex: '1000',
 };
 
 const menuBarStyleSmall = {
@@ -45,6 +46,7 @@ const menuBarStyleSmall = {
   justifyContent: 'space-between',
   backgroundColor: 'rgba(0, 0, 0, 0.8)',
   padding: '0.3rem',
+  zIndex: '1000',
 };
 
 const logoStyle = {

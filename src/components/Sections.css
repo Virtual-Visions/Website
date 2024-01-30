@@ -33,8 +33,8 @@
   background-color: white; /* Hintergrundfarbe anpassen */
   color: black;
   height: auto; /* Remove fixed height for responsiveness */
-  min-height: 100vh; /* Ensure it takes the full viewport height when content is small */
-  padding-bottom: 3rem;
+  min-height: 80vh; /* Ensure it takes the full viewport height when content is small */
+  padding-bottom: 1rem;
 }
 
 .section4{

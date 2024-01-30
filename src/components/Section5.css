@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -26,9 +27,9 @@ body {
 }
 
 .section-title-s5 {
-  font-size: 2.5rem; /* Größere Schrift für den Titel */
+  font-size: 2rem; /* Größere Schrift für den Titel */
   color: #333; /* Dunklere Textfarbe */
-  margin-bottom: 20px; /* Unten etwas Platz für den Titel */
+  margin-bottom: 40px; /* Unten etwas Platz für den Titel */
   margin-top: 3rem;
 }
 
@@ -47,7 +48,7 @@ video {
 }
 
 .video-text {
-  font-family: 'Montserrat', sans-serif; /* Montserrat einbinden */
+  font-family: 'Roboto', sans-serif; /* Montserrat einbinden */
   text-align: start;
   color: #555; /* Leicht dunklere Textfarbe */
   font-size: 1.2vw; /* Kleinere Schriftgröße für den Text */
@@ -79,7 +80,7 @@ video {
 }
 
 .button-text {
-  font-family: 'Montserrat', sans-serif; /* Montserrat einbinden */
+  font-family: 'Roboto', sans-serif; /* Montserrat einbinden */
   font-weight: 700;
   flex: 1.15;
   margin-right: 10px;

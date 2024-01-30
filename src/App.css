@@ -2,7 +2,9 @@
   text-align: center;
   min-height: 100vh;
   overflow: hidden;
+  font-family: 'Roboto', sans-serif;
 }
+
 
 .App-logo {
   height: 40vmin;

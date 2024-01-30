@@ -1,84 +1,176 @@
 /* Default styles for large screens */
-
-
-
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+
   background-color: #f4f4f4;
 }
 
 .App {
-    text-align: center;
-    
-    
-  }
+  text-align: center;
+  width: 100%;
+}
+
+.header {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  color: #333;
+  margin-top: -10rem;
+}
+
+.project-container {
+  display: grid;
+  grid-auto-flow: column;
+  max-width: 100%;
+  grid-auto-columns: 32%;
   
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--spacer);
+  overflow-y:scroll;
+  overscroll-behavior-inline: contain;
+}
+
+.project-container > * {
+  scroll-snap-align: start;
+}
+
+/* For Chrome and other WebKit browsers */
+.project-container::-webkit-scrollbar {
+  width: 0rem; /* Adjust the scrollbar width as needed */
+  height: 0rem;
+}
+
+.project-container::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make the thumb transparent */
+}
+
+.absolute {
+  position: relative;
+
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding: 0.75rem; /* Adjust the positioning as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  color: rgba(255, 255, 255, 1); /* Adjust the color as needed */
+  background-color: rgba(85, 85, 85, 0.5);
+  border-radius: 0.75rem;
+}
+
+.arrowLeft {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0.75rem 0.75rem 0.75rem 0.5rem; /* Adjust the positioning as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  color: rgba(255, 255, 255, 1); /* Adjust the color as needed */
+  background-color: rgba(85, 85, 85, 0.5);
+  border-radius: 0.75rem;
+}
+
+.arrow:hover {
+  background-color: rgba(85, 85, 85, 0.7);
+}
+
+.arrowLeft:hover {
+  background-color: rgba(85, 85, 85, 0.7);
+}
+
+.project {
+  padding-left: 1.5rem; /* Adjust for smaller screens */
+  --spacer: 1rem; /* Adjust for smaller screens */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+  border-radius: var(--spacer);
+  display:grid;
+  grid-template-rows: min-content;
+  gap: var(--spacer);
+  padding: 0 var(--spacer);
+  padding-top: var(--spacer);
+  margin: var(--spacer);
+
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.project-image {
+  border-radius: 0.5rem; /* Adjust for smaller screens */
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.project-header {
+
+
+  margin-top: 0;
+  margin-bottom: 1.5rem; /* Adjust for smaller screens */
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Media query for small screens */
+
+
+
+
+@media screen and (max-width: 1000px) {
+
   .header {
-
-    padding-bottom: 5rem;
     font-size: 2rem;
-    margin-bottom: 10rem;
+    padding-bottom: 5rem;
     color: #333;
-    
   }
-  
-  .project-container {
-
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .project {
-    padding: 1rem;
-  }
-  
-  .project a {
-    text-decoration: none;
-  }
-  
-  .project-image {
-    max-width: 100%;
-    aspect-ratio: 43/23;
-    height:auto;
-    width: 35rem;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-  }
-  
   .project-header {
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+
+  }
+  .project-container{
+      grid-auto-columns: 40%;
+      margin-bottom: -4rem;
+
+
+  }
+  .project
+  {
+    padding: 0 var(--spacer);
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .header {
+    font-size: 2rem;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
     color: #333;
   }
-  
-  /* Media query for small screens */
-  @media screen and (max-width: 1000px) {
-    .header{
-      padding-bottom: 0rem;
-      margin-bottom: 3rem;
-    }
-    .project-header{
-      margin-bottom: 0;
-    }
-    .project-container {
-      flex-direction: column;
-      align-items: center;
-      padding: 0 15%;
-    }
-  
-    .project {
-      width: 100%;
-
-      margin-bottom: 0.5rem; /* Adjust spacing as needed */
-    }
-    .project-image
-    {
-
-      aspect-ratio: 43/23;
- 
-    }
+  .project-header {
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
   }
+  .project-container{
+      grid-auto-columns: 70%;
+      grid-template-rows: 1fr 1fr;
+
+  }
+  .project
+  {
+    padding: var(--spacer);
+  }
+}

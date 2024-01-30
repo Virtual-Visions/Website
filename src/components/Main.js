@@ -3,6 +3,7 @@ import './Main.css';
 import AnimatedHeadline from './AnimatedHeadline.js'; // Importiere die Komponente
 import Sections from './Sections.js'; // Importiere die Komponente
 import Footer from './Footer.js'
+import Cooperation from './Cooperations.js'
 
 
 function Main() {
@@ -15,6 +16,7 @@ function Main() {
       </header> 
 
       <Sections />
+      <Cooperation />
       <Footer/>
     </div>
 

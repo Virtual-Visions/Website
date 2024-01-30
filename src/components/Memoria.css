@@ -1,4 +1,4 @@
-.header-image {
+.header-image-Memoria {
     background-image: url("/public/Memoria.jpg"); /* Passe den Pfad zum Header-Bild an */
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 
   /* Media query for small screens */
 @media (max-width: 768px) {
-    .header-image {
+    .header-image-Memoria {
       background-image: url('/public/Memoria_Small.jpg'); /* Replace with the path to your small screen image */
     }
   }
