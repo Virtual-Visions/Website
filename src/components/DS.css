@@ -60,7 +60,16 @@
   .body-ds{
     padding:0% 20%;
     text-align: start;
+    margin-bottom: 2rem;
   }
   .adsimple-112709565{
     text-align: start;
+  }
+
+
+  @media (max-width: 768px) {
+    .body-ds{
+      padding:0% 5%;
+      font-size: 10px;
+    }
   }
