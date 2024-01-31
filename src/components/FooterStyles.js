@@ -56,6 +56,22 @@ cursor: pointer;
 }
 `;
 
+export const FooterLinkChild = styled.a`
+color: #fff;
+margin-bottom: 20px;
+font-size: 14px;
+text-decoration: none;
+cursor: pointer;
+padding-right:2rem;
+&:hover {
+    color: green;
+    transition: 200ms ease-in;
+}
+@media (max-width: 1000px) {
+  font-size: 12px;
+}
+`;
+
 export const Text = styled.a`
 color: #fff;
 margin-bottom: 20px;

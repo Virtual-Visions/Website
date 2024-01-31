@@ -6,6 +6,7 @@ import {
   Row,
   Column,
   FooterLink,
+  FooterLinkChild,
   Heading,
   Text,
 } from "./FooterStyles";
@@ -22,6 +23,7 @@ const Footer = () => {
   const { language } = useContext(LanguageContext); // Verwende den LanguageContext
 
   return (
+
     <Box>
       <Container>
         <Row>
@@ -41,12 +43,7 @@ const Footer = () => {
             <FooterLink onClick={() => scrollToSection("section3")}>
               {language === "de" ? "Projekte" : "Projects"}
             </FooterLink>
-            <FooterLink href="/Imprint">
-              {language === "de" ? "Impressum" : "Imprint"}
-            </FooterLink>
-            <FooterLink href="/dataPrivacy">
-              {language === "de" ? "Datenschutz" : "Data privacy policy (german only)"}
-            </FooterLink>
+            
           </Column>
           <Column>
             <Heading>
@@ -100,10 +97,20 @@ const Footer = () => {
             </Text>
           </Column>
         </Row>
+        <hr className="abtrennungsLinieFooter" />
+        <div className="footer-links">
+        <FooterLinkChild className="footer-links-child" href="/Imprint">
+              {language === "de" ? "Impressum" : "Imprint"}
+            </FooterLinkChild>
+            <FooterLinkChild className="footer-links-child" href="/dataPrivacy">
+              {language === "de" ? "Datenschutz" : "Data privacy policy (german only)"}
+            </FooterLinkChild>
+        </div>
       </Container>
-      <hr className="abtrennungsLinieFooter" />
+
     </Box>
     
+
   );
 };
 

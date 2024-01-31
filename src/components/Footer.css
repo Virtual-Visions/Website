@@ -1,5 +1,23 @@
 .abtrennungsLinieFooter {
-  border: 1px solid white; /* Schwarze Linie mit 1px Breite und solidem Stil */
-  width: 98%;
+  border: 0.5 solid white; /* Schwarze Linie mit 1px Breite und solidem Stil */
+  width: 100%;
 /* Abstand oberhalb und unterhalb der Linie, automatische Ausrichtung horizontal */
+}
+
+.footer-links
+{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+@media (max-width: 516px) {
+  .footer-links
+  {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }

@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
+import './Footer.css'; // Importiere die CSS-Datei
 import {
   Box,
   Container,
   Row,
   Column,
   FooterLink,
+  FooterLinkChild,
   Heading,
   Text,
 } from "./FooterStyles";
@@ -18,13 +20,10 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>
-            {language === "de" ? "Über uns" : "About us"}
+            {language === "de" ? "Links" : "Links"}
             </Heading>
-            <FooterLink href="/Imprint">{language === "de" ? "Impressum" : "Imprint"}</FooterLink>
-            <FooterLink href="/dataPrivacy">
-              {language === "de" ? "Datenschutz" : "Data privacy policy (german only)"}
-            </FooterLink>
-            <FooterLink href="/">Home</FooterLink>
+
+            <FooterLink href="/">Homepage</FooterLink>
           </Column>
           <Column>
             <Heading>
@@ -71,6 +70,15 @@ const Footer = () => {
             </Text>
           </Column>
         </Row>
+        <hr className="abtrennungsLinieFooter" />
+        <div className="footer-links">
+        <FooterLinkChild className="footer-links-child" href="/Imprint">
+              {language === "de" ? "Impressum" : "Imprint"}
+            </FooterLinkChild>
+            <FooterLinkChild className="footer-links-child" href="/dataPrivacy">
+              {language === "de" ? "Datenschutz" : "Data privacy policy (german only)"}
+            </FooterLinkChild>
+        </div>
       </Container>
     </Box>
   );

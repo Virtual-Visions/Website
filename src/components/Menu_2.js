@@ -41,16 +41,7 @@ const menuItemContainerStyle = {
   padding: '0px 50px',
 };
 
-const menuItemStyle = {
-  padding: '10px 20px',
-  background: 'rgba(0, 0, 0, 0)',
-  color: '#d5d5d5',
-  border: 'none',
-  borderRadius: '10px',
-  cursor: 'pointer',
-  fontSize: '16px',
-  transition: 'color 0.3s, background 0.3s',
-};
+
 
 const languageButtonStyle = {
   padding: '10px 20px',
@@ -73,12 +64,7 @@ const handleButtonLeave = (event) => {
   event.target.style.background = 'rgba(0, 0, 0, 0)';
 };
 
-const scrollToSection = (sectionID) => {
-  const section = document.getElementById(sectionID);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-};
+
 
 function AnimatedHeadline() {
   const { language, toggleLanguage } = useLanguage(); // Verwenden Sie den Sprachstatus und die toggleLanguage-Funktion aus dem LanguageProvider
