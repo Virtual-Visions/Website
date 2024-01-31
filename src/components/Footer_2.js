@@ -6,9 +6,11 @@ import {
   Row,
   Column,
   FooterLink,
+
   FooterLinkChild,
   Heading,
   Text,
+  FooterRights,
 } from "./FooterStyles";
 import { LanguageContext } from "./LanguageProvider";
 
@@ -72,9 +74,9 @@ const Footer = () => {
         </Row>
         <hr className="abtrennungsLinieFooter" />
         <div className="footer-links">
-        <FooterLinkChild >
+        <FooterRights>
               {language === "de" ? "© Virtual Visions OG 2024, alle Rechte vorbehalten" : "© Virtual Visions OG 2024, all rights reserved"}
-            </FooterLinkChild>
+            </FooterRights>
         <FooterLinkChild className="footer-links-child" href="/Imprint">
               {language === "de" ? "Impressum" : "Imprint"}
             </FooterLinkChild>

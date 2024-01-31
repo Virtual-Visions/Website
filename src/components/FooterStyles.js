@@ -73,6 +73,21 @@ text-align:left;
 }
 `;
 
+export const FooterRights = styled.span`
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: left;
+  padding-right: 2rem;
+
+
+  
+  @media (max-width: 1000px) {
+    font-size: 12px;
+  }
+`;
+
+
 export const Text = styled.a`
 color: #fff;
 margin-bottom: 20px;
