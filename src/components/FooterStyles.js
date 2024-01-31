@@ -63,6 +63,7 @@ font-size: 14px;
 text-decoration: none;
 cursor: pointer;
 padding-right:2rem;
+text-align:left;
 &:hover {
     color: green;
     transition: 200ms ease-in;

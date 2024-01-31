@@ -99,6 +99,9 @@ const Footer = () => {
         </Row>
         <hr className="abtrennungsLinieFooter" />
         <div className="footer-links">
+        <FooterLinkChild >
+              {language === "de" ? "© Virtual Visions OG 2024, alle Rechte vorbehalten" : "© Virtual Visions OG 2024, all rights reserved"}
+            </FooterLinkChild>
         <FooterLinkChild className="footer-links-child" href="/Imprint">
               {language === "de" ? "Impressum" : "Imprint"}
             </FooterLinkChild>
