@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from './Main';
 import Imprint from './Imprint';
+import DS from './DS'
 import Memoria from './Memoria';
 import Grabbing from './Freies_Greifen';
 import Walking from './RedirectedWalking';
@@ -15,6 +16,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/imprint" element={<Imprint />} />
+        <Route path="/dataPrivacy" element={<DS />} />
         <Route path="/memoria" element={<Memoria />} />
         <Route path="/grabbing" element={<Grabbing />} />
         <Route path="/walking" element={<Walking />} />

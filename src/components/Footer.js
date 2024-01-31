@@ -43,6 +43,9 @@ const Footer = () => {
             <FooterLink href="/Imprint">
               {language === "de" ? "Impressum" : "Imprint"}
             </FooterLink>
+            <FooterLink href="/dataPrivacy">
+              {language === "de" ? "Datenschutz" : "Data privacy policy (german only)"}
+            </FooterLink>
           </Column>
           <Column>
             <Heading>

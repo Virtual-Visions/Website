@@ -21,6 +21,9 @@ const Footer = () => {
             {language === "de" ? "Über uns" : "About us"}
             </Heading>
             <FooterLink href="/Imprint">{language === "de" ? "Impressum" : "Imprint"}</FooterLink>
+            <FooterLink href="/dataPrivacy">
+              {language === "de" ? "Datenschutz" : "Data privacy policy (german only)"}
+            </FooterLink>
             <FooterLink href="/">Home</FooterLink>
           </Column>
           <Column>

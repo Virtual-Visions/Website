@@ -1,0 +1,66 @@
+/* Imprint.css */
+
+/* Style the container */
+
+  
+  /* Style the main content wrapper */
+  .main-content {
+    flex: 1; /* Allow the content to grow and fill available space */
+  }
+  
+  /* Style the main content */
+  .imprint-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the heading */
+  .imprint-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the address and contact information */
+  .imprint-content address {
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the "vertreten durch" section */
+  .imprint-content b {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  /* Style the contact details */
+  .imprint-content b + p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the link */
+  .imprint-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Style the link on hover */
+  .imprint-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the footer */
+  .footer {
+    text-align: center;
+    padding: 10px;
+  }
+  .body-ds{
+    padding:0% 20%;
+    text-align: start;
+  }
+  .adsimple-112709565{
+    text-align: start;
+  }

@@ -6,7 +6,6 @@ import { LanguageContext } from './LanguageProvider'; // Importiere den Language
 
 function Imprint() {
   const { language } = useContext(LanguageContext); // Verwende den LanguageContext
-
   return (
     <div className="imprint-container">
       <div><MenuBar/></div>
@@ -38,6 +37,11 @@ function Imprint() {
         E-Mail: business.virtualvisions@gmail.com
         <br />
         {language === 'de' ? 'Internet' : 'Internet'}:
+        
+
+      </div>
+      <div>
+        
       </div>
       <Footer />
       {/*
@@ -50,8 +54,10 @@ function Imprint() {
         </div>
       </footer>
       */}
+
     </div>
   );
+  
 }
 
 export default Imprint;
