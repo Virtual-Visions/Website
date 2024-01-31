@@ -1,0 +1,5 @@
+.abtrennungsLinieFooter {
+  border: 1px solid white; /* Schwarze Linie mit 1px Breite und solidem Stil */
+  width: 98%;
+/* Abstand oberhalb und unterhalb der Linie, automatische Ausrichtung horizontal */
+}

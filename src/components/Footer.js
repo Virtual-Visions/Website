@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import './Footer.css'; // Importiere die CSS-Datei
 import {
   Box,
   Container,
@@ -100,7 +101,9 @@ const Footer = () => {
           </Column>
         </Row>
       </Container>
+      <hr className="abtrennungsLinieFooter" />
     </Box>
+    
   );
 };
 
