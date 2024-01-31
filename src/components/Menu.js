@@ -183,7 +183,7 @@ function AnimatedHeadline() {
               style={menuItemStyle}
               onMouseEnter={handleButtonHover}
               onMouseLeave={handleButtonLeave}
-              onClick={() => scrollToSection('section4')}
+              onClick={() => scrollToSection('cooperationSection')}
             >
               {textContent[language].company}
             </button>
@@ -240,7 +240,7 @@ function AnimatedHeadline() {
               style={menuSmallItemStyle}
               onMouseEnter={handleButtonHover}
               onMouseLeave={handleButtonLeave}
-              onClick={() => scrollToSection('section4')}
+              onClick={() => scrollToSection('cooperationSection')}
             >
               {textContent[language].company}
             </button>

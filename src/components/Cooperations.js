@@ -7,7 +7,7 @@ import './Cooperations.css'
 function App() {
   const { language } = useContext(LanguageContext); // Verwende den LanguageContext
   return (
-    <div className="cooperationSection">
+    <div className="cooperationSection" id='cooperationSection'>
       <hr className="abtrennungsLinie" />
       <h1 className='cooperationHeader'>{language === "de" ? "Kooperationspartner & Kunden" : "Cooperationpartner & Customers"}</h1>
       <div className='cooperation-image-container'>
