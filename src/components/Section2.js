@@ -42,7 +42,7 @@ const ImageRow = () => {
           headerTextEn="Bjarne Zimmer"
           description={
             language === 'de'
-              ? '"Die virtuelle Realität ist für nicht nur eine Technologie, sondern eine Brücke zu unendlichen Möglichkeiten. In dieser digitalen Sphäre finden wir die Freiheit, Ideen zu manifestieren und gleichzeitig die reale Welt neu zu interpretieren."'
+              ? '"Die virtuelle Realität ist nicht nur eine Technologie, sondern eine Brücke zu unendlichen Möglichkeiten. In dieser digitalen Sphäre finden wir die Freiheit, Ideen zu manifestieren und gleichzeitig die reale Welt neu zu interpretieren."'
               : '"Virtual reality is not just a technology, but a bridge to infinite possibilities. In this digital realm, we find the freedom to manifest ideas while reinterpreting the real world."'
           }
         />

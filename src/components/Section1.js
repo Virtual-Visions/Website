@@ -57,7 +57,7 @@ function Section1() {
           title={language === 'de' ? 'Modernisierung' : 'Modernization'}
           content={
             language === 'de'
-              ? "Die Modernisierung von Arbeitsabläufe und Schulungsmethoden ist ein entscheidender Faktor, um wettbewerbsfähig zu bleiben. Wir verstehen Modernisierung als den Einsatz fortschrittlicher Technologien wie Virtual Reality, um gewohnte Schulungs- und Arbeitsprozesse in ihrer Effizienz und Nachhaltigkeit zu revolutionieren. Mit unseren VR-Anwendungen bringen wir mit Ihnen Unternehmen auf den neuesten Stand der Technik."
+              ? "Die Modernisierung von Arbeitsabläufen und Schulungsmethoden ist ein entscheidender Faktor, um wettbewerbsfähig zu bleiben. Wir verstehen Modernisierung als den Einsatz fortschrittlicher Technologien wie Virtual Reality, um gewohnte Schulungs- und Arbeitsprozesse in ihrer Effizienz und Nachhaltigkeit zu revolutionieren. Mit unseren VR-Anwendungen bringen wir mit Ihnen ihr Unternehmen auf den neuesten Stand der Technik."
               : "Modernizing workflows and training methods is a crucial factor in remaining competitive. We define modernization as the utilization of advanced technologies like Virtual Reality to revolutionize traditional training and work processes in terms of efficiency and sustainability. With our VR applications, we bring your company up to the latest technological standards."
           }
           alignRight
@@ -67,7 +67,7 @@ function Section1() {
           title={language === 'de' ? 'Wiederholbarkeit' : 'Repeatability'}
           content={
             language === 'de'
-              ? "Wiederholbarkeit ist ein weiterer entscheidender Faktor, wenn es darum geht, dass Schulungen und Training effektiv werden. Dies ermöglicht es Ihren Mitarbeitern, in realistischer Umgebung aktiv immer wieder Erfahrungen zu sammeln. Damit verbessern und erweitern sie ihr Wissen und ihre Fähigkeiten kontinuierlich. Trainings und Schulungen sind in Ihrer Regie jederzeit nach Bedarf möglich."
+              ? "Wiederholbarkeit ist ein weiterer entscheidender Faktor, wenn es darum geht, dass Schulungen und Training effektiv werden. Dies ermöglicht es Ihren Mitarbeitern, in realistischer Umgebung aktiv immer wieder Erfahrungen zu sammeln. Damit verbessern und erweitern sie ihr Wissen und ihre Fähigkeiten kontinuierlich. Trainings- und Schulungsanpassungen sind in Ihrer Regie jederzeit nach Bedarf möglich."
               : "Repeatability is another important factor when it comes to making training and learning effective. It allows your employees to actively gain experience in a realistic environment repeatedly. This continuous process enables them to improve and expand their knowledge and skills. Trainings and learning sessions can be conducted under your control whenever needed."
           }
           alignRight
