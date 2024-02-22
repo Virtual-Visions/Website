@@ -93,6 +93,13 @@ function App() {
 
                 <section style={sectionStyle}>
                     <h2>
+                        {language === 'de' ? 'Trailer' : 'Trailer'}
+                    </h2>
+                    <video controls width="100%">
+                        <source src="CNC_video.mp4" type="video/mp4" />
+                        {language === 'de' ? 'Dein Browser unterstützt das Video-Tag nicht.' : 'Your browser does not support the video tag.'}
+                    </video>
+                    <h2>
                         {language === 'de' ? 'Umgebungsaufbau' : 'Enivronmentbuilding'}
                     </h2>
                     <video controls width="100%">
@@ -119,7 +126,7 @@ function App() {
                         {language === 'de' ? 'Screenshots' : 'Screenshots'}
                     </h2>
                     <div style={imageContainerStyle}>
-                        <img src="CNC_2.jpg" alt={language === 'de' ? 'Bild 1' : 'Image 1'} style={{
+                        <img src="CNC_8.jpg" alt={language === 'de' ? 'Bild 1' : 'Image 1'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
@@ -140,6 +147,18 @@ function App() {
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
                         <img src="CNC_7.jpg" alt={language === 'de' ? 'Bild 6' : 'Image 6'} style={{
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
+                        <img src="CNC_9.jpg" alt={language === 'de' ? 'Bild 4' : 'Image 4'} style={{
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
+                        <img src="CNC_12.jpg" alt={language === 'de' ? 'Bild 5' : 'Image 5'} style={{
+                            ...imageStyle,
+                            ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
+                        }} />
+                        <img src="CNC_11.jpg" alt={language === 'de' ? 'Bild 6' : 'Image 6'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
