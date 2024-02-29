@@ -11,7 +11,7 @@ function Imprint() {
       <div><MenuBar/></div>
       <div className="main-content">
         <h1>
-          {language === 'de' ? 'Impressum der Virtual Visions GbR' : 'Imprint of Virtual Visions GbR'}
+          {language === 'de' ? 'Impressum der Virtual Visions OG' : 'Imprint of Virtual Visions OG'}
         </h1>
 
         <b>Virtual Visions</b>
@@ -23,6 +23,13 @@ function Imprint() {
           <br />
           {language === 'de' ? 'Österreich' : 'Austria'}
           <br />
+          <br />
+          {language === 'de' ? 'Firmenbuchnummer: 616191p' : 'company register number: 616191p'}
+          <br />
+          <br />
+          UID: ATU80353804
+          <br />
+
         </address>
         <br />
         <b>
@@ -36,7 +43,7 @@ function Imprint() {
         <br />
         E-Mail: business.virtualvisions@gmail.com
         <br />
-        {language === 'de' ? 'Internet' : 'Internet'}:
+        {language === 'de' ? 'Internet: virtual-visions.net' : 'Internet: virtual-visions.net'}:
         
 
       </div>

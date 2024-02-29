@@ -12,7 +12,7 @@ function Imprint() {
     <div className="imprint-container">
       <div className="main-content">
         <h1>
-          {language === 'de' ? 'Impressum der Virtual Visions GbR' : 'Imprint of Virtual Visions GbR'}
+          {language === 'de' ? 'Impressum der Virtual Visions OG' : 'Imprint of Virtual Visions OG'}
         </h1>
 
         <b>Virtual Visions</b>
@@ -39,7 +39,7 @@ function Imprint() {
         <br />
         {language === 'de' ? 'E-Mail: business.virtualvisions@gmail.com' : 'Email: business.virtualvisions@gmail.com'}
         <br />
-        {language === 'de' ? 'Internet:' : 'Website:'}
+        {language === 'de' ? 'Internet: virtual-visions.net' : 'Website: virtual-visions.net'}
       </div>
       <Footer />
     </div>
