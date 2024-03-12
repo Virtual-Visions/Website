@@ -5,6 +5,7 @@ import Section2 from './Section2';
 import Section3 from './Section3';
 import Section4 from './Section4';
 import Section5 from './Section5';
+import Section6 from './Section6';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       <div id="section5" className="section5">
         <Section5/>
       </div>     
+      <div id="section6" className="section6">
+        <Section6/>
+      </div>
       <div id="section3" className="section3">
         <Section3/>
       </div>    

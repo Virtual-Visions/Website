@@ -22,7 +22,7 @@
   margin-top: 20px;
   justify-content: center;
   padding: 0;
-  background-color: rgb(235, 235, 235); 
+  background-color: white;
 }
 .section2{
   width: 100%; /* Die volle Bildschirmbreite */
@@ -30,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white; /* Hintergrundfarbe anpassen */
+  background-color:rgb(235, 235, 235); /* Hintergrundfarbe anpassen */;
   color: black;
   height: auto; /* Remove fixed height for responsiveness */
   min-height: 100vh; /* Ensure it takes the full viewport height when content is small */
@@ -43,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white; /* Hintergrundfarbe anpassen */
+  background-color:rgb(235, 235, 235); /* Hintergrundfarbe anpassen */;
   color: black;
   height: auto; /* Remove fixed height for responsiveness */
   min-height: 100vh; /* Ensure it takes the full viewport height when content is small */
@@ -58,7 +58,7 @@
   justify-content: center;
   height: auto;
   min-height: 100vh;
-
+  
 }
 
 .section5{
@@ -71,6 +71,19 @@
   min-height: 100vh;
   background-color:rgb(235, 235, 235); /* Hintergrundfarbe anpassen */;
   padding-top: 3rem;
+}
+
+.section6{
+  width: 100%; /* Die volle Bildschirmbreite */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 100vh;
+  background-color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .section p {

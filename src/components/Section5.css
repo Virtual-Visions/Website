@@ -23,13 +23,13 @@ body {
   display: flex;
   align-items: stretch; /* Streckt die Elemente über die gesamte Höhe */
   height: 100%;
-  margin-bottom: 5rem;
+
 }
 
 .section-title-s5 {
   font-size: 2rem; /* Größere Schrift für den Titel */
   color: #333; /* Dunklere Textfarbe */
-  margin-bottom: 40px; /* Unten etwas Platz für den Titel */
+  margin-bottom: 5rem; /* Unten etwas Platz für den Titel */
   margin-top: 3rem;
 }
 
