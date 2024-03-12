@@ -7,7 +7,7 @@ const textContent = {
   de: {
     main: 'Main',
     vision: 'Vision',
-    company: 'Partner',
+    company: 'Leistungen',
     aboutUs: 'Über uns',
     projects: 'Projekte',
     language: 'EN',
@@ -16,7 +16,7 @@ const textContent = {
   en: {
     main: 'Main',
     vision: 'Vision',
-    company: 'Partner',
+    company: 'Services',
     aboutUs: 'About us',
     projects: 'Projects',
     language: 'DE',
@@ -183,7 +183,7 @@ function AnimatedHeadline() {
               style={menuItemStyle}
               onMouseEnter={handleButtonHover}
               onMouseLeave={handleButtonLeave}
-              onClick={() => scrollToSection('cooperationSection')}
+              onClick={() => scrollToSection('section6')}
             >
               {textContent[language].company}
             </button>
@@ -240,7 +240,7 @@ function AnimatedHeadline() {
               style={menuSmallItemStyle}
               onMouseEnter={handleButtonHover}
               onMouseLeave={handleButtonLeave}
-              onClick={() => scrollToSection('cooperationSection')}
+              onClick={() => scrollToSection('section6')}
             >
               {textContent[language].company}
             </button>
