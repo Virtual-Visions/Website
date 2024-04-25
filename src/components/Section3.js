@@ -21,6 +21,12 @@ const App = () => {
       url: '/cncMachine',
     },
     {
+      imageSrc: 'UI_Cover.png',
+      headerTextDe: 'Physics Based UI',
+      headerTextEn: 'Physics Based UI ',
+      url: '/physicsBasedUI',
+    },
+    {
       imageSrc: 'Grabbing01.png',
       headerTextDe: 'Freies Greifen von Objekten',
       headerTextEn: 'Free Object Grasping ',
@@ -32,6 +38,7 @@ const App = () => {
       headerTextEn: 'Redirected Walking ',
       url: '/walking',
     },
+
 
 
 

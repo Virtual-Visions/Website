@@ -170,7 +170,7 @@ function App() {
                             {language === 'de' ? 'Portfolio FH Salzburg' : 'FH Salzburg Portfolio'}
                         </a>
                         <a href="https://www.youtube.com/watch?v=2nfMrxMgm1o&feature=youtu.be&ab_channel=VirtualVisions" style={linkStyle}>
-                            {language === 'de' ? 'Memoria Playtrough' : 'Memora Playtrough'}
+                            {language === 'de' ? 'Memoria Playtrough' : 'Memoria Playtrough'}
                         </a>
                     </p>
                 </section>

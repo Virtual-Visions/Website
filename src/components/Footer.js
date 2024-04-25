@@ -86,8 +86,8 @@ const Footer = () => {
             <Text>
               <b>E-Mail</b>{" "}
               {language === "de"
-                ? "business.virtualvisions@gmail.com"
-                : "business.virtualvisions@gmail.com"}
+                ? "business.virtualvisions@virtual-visions.net"
+                : "business.virtualvisions@virtual-visions.net"}
             </Text>
             <Text>
               <b>{language === "de" ? "Telefon" : "Phone"}</b>

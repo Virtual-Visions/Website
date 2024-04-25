@@ -173,16 +173,15 @@ function App() {
                         {language === 'de' ? 'Links' : 'Links'}
                     </h2>
                     <p>
-                        Coming soon
                         {/* <a href="https://memoria-vr.itch.io/memoria" style={linkStyle}>
                             {language === 'de' ? 'Itchi.io' : 'Itch.io'}
                         </a>
                         <a href="https://portfolio.fh-salzburg.ac.at/projects/2022-memoria-mmp3" style={linkStyle}>
                             {language === 'de' ? 'Portfolio FH Salzburg' : 'FH Salzburg Portfolio'}
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=2nfMrxMgm1o&feature=youtu.be&ab_channel=VirtualVisions" style={linkStyle}>
-                            {language === 'de' ? 'Memoria Playtrough' : 'Memora Playtrough'}
-                        </a> */}
+                        </a>*/}
+                        <a href="https://www.youtube.com/watch?v=IS9g_EJFyIA&ab_channel=VirtualVisionss" style={linkStyle}>
+                            {language === 'de' ? 'CNC Einschulungvideo' : 'CNC Introduction video'}
+                        </a> 
                     </p>
                 </section>
             </main>

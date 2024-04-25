@@ -5,6 +5,7 @@ import Main from './Main';
 import Imprint from './Imprint';
 import DS from './DS'
 import Memoria from './Memoria';
+import PhysicsBasedUI from './PhysicsBasedUI';
 import Grabbing from './Freies_Greifen';
 import Walking from './RedirectedWalking';
 import CNCMachine from './CNC_Maschine';
@@ -21,6 +22,7 @@ const AppRouter = () => {
         <Route path="/grabbing" element={<Grabbing />} />
         <Route path="/walking" element={<Walking />} />
         <Route path="/cncMachine" element={<CNCMachine />} />
+        <Route path="/physicsBasedUI" element={<PhysicsBasedUI />} />
       </Routes>
     </BrowserRouter>
   );

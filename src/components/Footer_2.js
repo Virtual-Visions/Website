@@ -65,10 +65,10 @@ const Footer = () => {
             {language === "de" ? "Kontakt" : "Contact Us"}
             </Heading>
             <Text>
-              <b>E-Mail</b> business.virtualvisions@gmail.com
+              <b>E-Mail</b> business.virtualvisions@virtual-visions.net
             </Text>
             <Text>
-              <b>Telefon</b> <br></br>+43 650 2601493 +49 151 42851038
+              <b>Telefon</b> <br></br>+43 650 2601493 <br></br>+49 151 42851038
             </Text>
           </Column>
         </Row>
