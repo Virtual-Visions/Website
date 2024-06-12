@@ -1,5 +1,5 @@
 .cooperationSection {
-  min-height: 40vh; /* Jeder Abschnitt nimmt die volle Bildschirmhöhe ein */
+  min-height: 60vh; /* Jeder Abschnitt nimmt die volle Bildschirmhöhe ein */
   width: 100%; /* Die volle Bildschirmbreite */
   display: flex;
   flex-direction: column;
@@ -15,19 +15,38 @@
   margin: 0px 0px 3rem 0px; /* Optional: Abstand oberhalb und unterhalb der Linie */
 }
 .cooperationHeader{
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 
 }
+.cooperation-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .cooperation-image{
-  max-height: 5rem;
+  max-height: 8rem;
+  max-width: 12rem;
   padding: 2rem 10rem;
 }
 
+@media (max-width: 1550px) {
+  .cooperation-image{
+    max-height: 8rem;
+    padding: 3rem 5rem;
+  }
+}
+
+
 @media (max-width: 768px) {
   .cooperation-image{
-    max-height: 5rem;
-    padding: 2rem 3rem;
+    max-height: 8rem;
+    padding: 3rem 5rem;
+  }
+  .cooperationHeader{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  
   }
 }
 

@@ -13,6 +13,7 @@ function App() {
       <div className='cooperation-image-container'>
         <img className="cooperation-image" src="startup-salzburg-logo.png" alt='' />
         <img className="cooperation-image" src="Pioniergarage_Logo.png" alt='' />
+        <img className="cooperation-image" src="Scientific_Partner.png" alt='' />
       </div>
     </div>
   );
