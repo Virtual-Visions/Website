@@ -181,8 +181,8 @@ function App() {
                         <a href="https://portfolio.fh-salzburg.ac.at/projects/2022-memoria-mmp3" style={linkStyle}>
                             {language === 'de' ? 'Portfolio FH Salzburg' : 'FH Salzburg Portfolio'}
                         </a>*/}
-                        <a href="https://www.youtube.com/watch?v=IS9g_EJFyIA&ab_channel=VirtualVisionss" style={linkStyle}>
-                            {language === 'de' ? 'CNC Einschulungvideo' : 'CNC Introduction video'}
+                        <a href="https://www.youtube.com/watch?v=nO5FOBfHhU8&ab_channel=VirtualVisions" style={linkStyle}>
+                            {language === 'de' ? 'Mix Master VR Tutorial' : 'Mix Master VR Tutorial Playtrough'}
                         </a> 
                     </p>
                 </section>

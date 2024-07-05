@@ -15,13 +15,13 @@ const App = () => {
       url: '/memoria',
     },
     {
-      imageSrc: 'Environment.jpg',
+      imageSrc: 'CNC_CoverImage.jpg',
       headerTextDe: 'CNC Fräse Einschulung',
       headerTextEn: 'CNC Milingmachine Introduction',
       url: '/cncMachine',
     },
     {
-      imageSrc: 'Bar.png',
+      imageSrc: 'MixMaster_VR_CoverImage.png',
       headerTextDe: 'MixMasterVR',
       headerTextEn: 'MixMasterVR',
       url: '/mixMasterVR',
