@@ -97,16 +97,16 @@ function App() {
                         {language === 'de' ? 'Trailer' : 'Trailer'}
                     </h2>
                     <video controls width="100%">
-                        <source src="CNC_video.mp4" type="video/mp4" />
+                        <source src="MixMasterVR/TrailerMixMaster.mp4" type="video/mp4" />
                         {language === 'de' ? 'Dein Browser unterstützt das Video-Tag nicht.' : 'Your browser does not support the video tag.'}
                     </video>
-                    <h2>
+                    {/* <h2>
                         {language === 'de' ? 'Umgebungsaufbau' : 'Enivronmentbuilding'}
                     </h2>
                     <video controls width="100%">
                         <source src="Environment_building.mp4" type="video/mp4" />
                         {language === 'de' ? 'Dein Browser unterstützt das Video-Tag nicht.' : 'Your browser does not support the video tag.'}
-                    </video>
+                    </video> */}
                 </section>
 
 
