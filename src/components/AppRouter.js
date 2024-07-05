@@ -9,6 +9,7 @@ import PhysicsBasedUI from './PhysicsBasedUI';
 import Grabbing from './Freies_Greifen';
 import Walking from './RedirectedWalking';
 import CNCMachine from './CNC_Maschine';
+import MixMasterVR from './MixMasterVR';
 
 
 const AppRouter = () => {
@@ -21,8 +22,10 @@ const AppRouter = () => {
         <Route path="/memoria" element={<Memoria />} />
         <Route path="/grabbing" element={<Grabbing />} />
         <Route path="/walking" element={<Walking />} />
+        <Route path="/mixMasterVR" element={<MixMasterVR />} />
         <Route path="/cncMachine" element={<CNCMachine />} />
         <Route path="/physicsBasedUI" element={<PhysicsBasedUI />} />
+
       </Routes>
     </BrowserRouter>
   );

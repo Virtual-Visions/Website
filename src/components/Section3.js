@@ -21,6 +21,12 @@ const App = () => {
       url: '/cncMachine',
     },
     {
+      imageSrc: 'Bar.png',
+      headerTextDe: 'MixMasterVR',
+      headerTextEn: 'MixMasterVR',
+      url: '/mixMasterVR',
+    },
+    {
       imageSrc: 'UI_Cover.png',
       headerTextDe: 'Physics Based UI',
       headerTextEn: 'Physics Based UI ',
