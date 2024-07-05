@@ -128,39 +128,39 @@ function App() {
                         {language === 'de' ? 'Screenshots' : 'Screenshots'}
                     </h2>
                     <div style={imageContainerStyle}>
-                        <img src="CNC_8.jpg" alt={language === 'de' ? 'Bild 1' : 'Image 1'} style={{
+                        <img src="MixMasterVR/BarShot.jpg" alt={language === 'de' ? 'Bild 1' : 'Image 1'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="Environment.jpg" alt={language === 'de' ? 'Bild 2' : 'Image 2'} style={{
+                        <img src="MixMasterVR/Buch.jpg" alt={language === 'de' ? 'Bild 2' : 'Image 2'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="CNC_6.jpg" alt={language === 'de' ? 'Bild 3' : 'Image 3'} style={{
+                        <img src="MixMasterVR/Carina.jpg" alt={language === 'de' ? 'Bild 3' : 'Image 3'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="CNC_5.jpg" alt={language === 'de' ? 'Bild 4' : 'Image 4'} style={{
+                        <img src="MixMasterVR/Cola_Einfuellen.jpg" alt={language === 'de' ? 'Bild 4' : 'Image 4'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="CNC_3.PNG" alt={language === 'de' ? 'Bild 5' : 'Image 5'} style={{
+                        <img src="MixMasterVR/Intro.jpg" alt={language === 'de' ? 'Bild 5' : 'Image 5'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="CNC_7.jpg" alt={language === 'de' ? 'Bild 6' : 'Image 6'} style={{
+                        <img src="MixMasterVR/Lobby.jpg" alt={language === 'de' ? 'Bild 6' : 'Image 6'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="CNC_9.jpg" alt={language === 'de' ? 'Bild 4' : 'Image 4'} style={{
+                        <img src="MixMasterVR/Lime.jpg" alt={language === 'de' ? 'Bild 4' : 'Image 4'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="CNC_12.jpg" alt={language === 'de' ? 'Bild 5' : 'Image 5'} style={{
+                        <img src="MixMasterVR/Shaken.jpg" alt={language === 'de' ? 'Bild 5' : 'Image 5'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
-                        <img src="CNC_11.jpg" alt={language === 'de' ? 'Bild 6' : 'Image 6'} style={{
+                        <img src="MixMasterVR/Zusammenfassung.jpg" alt={language === 'de' ? 'Bild 6' : 'Image 6'} style={{
                             ...imageStyle,
                             ...(window.innerWidth <= 768 ? { width: '100%', maxWidth: '100%' } : {}),
                         }} />
