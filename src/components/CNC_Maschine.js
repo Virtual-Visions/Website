@@ -70,7 +70,7 @@ function App() {
     return (
         <div style={appStyle}>
             <header style={headerStyle}>
-                <div className='header-image'></div>
+                <div className='header-image-CNC'></div>
                 <h1 style={headerTextStyles}>
                     {language === 'de' ? 'CNC-Fräsen Einschulung' : 'CNC Milingmachine Introduction'}
                 </h1>
