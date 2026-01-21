@@ -28,7 +28,7 @@ export default function GrabbingPage() {
           <section className="py-20 md:py-32 bg-black relative" aria-labelledby="grabbing-hero-heading">
             <div className="absolute inset-0 opacity-20">
               <Image
-                src="/images/projects/grabbing/grabbing-hero.png"
+                src="/placeholder.svg?height=1080&width=1920&text=Grabbing+VR+Hero"
                 alt=""
                 fill
                 className="object-cover"
@@ -192,11 +192,11 @@ export default function GrabbingPage() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.3, delay: num * 0.1 }}
                       className="relative rounded-lg overflow-hidden aspect-video group cursor-pointer"
-                      onClick={() => setSelectedImage(`/images/projects/grabbing/grabbing${num}.png`)}
+                      onClick={() => setSelectedImage(`/placeholder.svg?height=600&width=800&text=Grabbing+${num}`)}
                       onKeyDown={(e) => {
                         if (e.key === "Enter" || e.key === " ") {
                           e.preventDefault()
-                          setSelectedImage(`/images/projects/grabbing/grabbing${num}.png`)
+                          setSelectedImage(`/placeholder.svg?height=600&width=800&text=Grabbing+${num}`)
                         }
                       }}
                       tabIndex={0}
@@ -204,7 +204,7 @@ export default function GrabbingPage() {
                       aria-label={`${language === "de" ? "Galerie Bild" : "Gallery image"} ${num} ${language === "de" ? "vergrößern" : "enlarge"}`}
                     >
                       <Image
-                        src={`/images/projects/grabbing/grabbing${num}.png`}
+                        src={`/ceholder-svg-height-400-width-600-text-grabbing-.jpg?height=400&width=600&text=Grabbing+${num}`}
                         alt={`${language === "de" ? "Grabbing VR Demonstration" : "Grabbing VR Demonstration"} ${num}`}
                         width={600}
                         height={400}
